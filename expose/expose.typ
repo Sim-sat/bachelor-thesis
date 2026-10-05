@@ -1,5 +1,4 @@
 // Exposé zur Bachelorarbeit
-// Kompilieren: typst compile expose.typ  (oder: typst watch expose.typ)
 
 #set page(
   paper: "a4",
