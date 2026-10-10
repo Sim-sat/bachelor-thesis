@@ -28,7 +28,7 @@
     Simon Sattelberger \
     Matrikelnummer: q7362730 \
     Bachelor Informatik\
-    1.10.2026
+    10.10.2026
   ]
   #v(0.5em)
   #text(size: 11pt)[Betreuer: Prof. Dr.-Ing. habil. Dr. h.c. Herwig Unger]
@@ -56,7 +56,7 @@ Die Ausgabe des Skripts geschieht entweder als CSV-Datei oder in einer Datenbank
 
 = Evaluation
 
-Für ein manuell annotiertes Teilsample von ca. 50 bis 100 Artikeln werden die Ereignisse samt Datum, Uhrzeit und ggf. Gewichtung von Hand erfasst. Die Ausgaben der Varianten werden dagegen mit Precision, Recall und F1 je Attribut verglichen. Zusätzlich werden Kosten, Laufzeit und Fehlerrate (z.~B. ungültige Ausgaben) erfasst. Die Zuordnung gleicher EReignisse wird im annotierten Teilsample gegen die manuelle Zuordnung geprüft.
+Für ein manuell annotiertes Teilsample von ca. 50 bis 100 Artikeln werden die Ereignisse samt Datum, Uhrzeit und ggf. Gewichtung von Hand erfasst. Die Ausgaben der Varianten werden dagegen mit Precision, Recall und F1 je Attribut verglichen. Zusätzlich werden Kosten, Laufzeit und Fehlerrate (z.~B. ungültige Ausgaben) erfasst. Die Zuordnung gleicher Ereignisse wird im annotierten Teilsample gegen die manuelle Zuordnung geprüft.
 
 = Vorläufige Literatur
 
