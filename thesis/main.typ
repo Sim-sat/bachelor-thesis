@@ -26,11 +26,13 @@
 
 #include "chapters/01-einleitung.typ"
 #include "chapters/02-grundlagen.typ"
-#include "chapters/03-methodik.typ"
-#include "chapters/04-umsetzung.typ"
-#include "chapters/05-evaluation.typ"
-#include "chapters/06-diskussion.typ"
-#include "chapters/07-fazit.typ"
+#include "chapters/03-verwadte-arbeiten.typ"
+#include "chapters/04-datengrundlage.typ"
+#include "chapters/05-konzept.typ"
+#include "chapters/06-implementierung.typ"
+#include "chapters/07-evaluation.typ"
+#include "chapters/08-diskussion.typ"
+#include "chapters/09-fazit.typ"
 
 // ---------------------------------------------------------------- Schlussteil (römisch, fortgesetzt)
 

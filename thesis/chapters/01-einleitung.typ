@@ -16,5 +16,3 @@ Ziel der Arbeit ist es, aus einem Korpus englischer Nachrichtenartikel mithilfe 
 
 == Aufbau der Arbeit
 
-// Kurzer Überblick über die folgenden Kapitel, mit Querverweisen:
-@grundlagen beschreibt die Grundlagen, @methodik das Vorgehen, @umsetzung die Umsetzung und @evaluation die Evaluation. Die Ergebnisse werden in @diskussion diskutiert, @fazit schließt mit Fazit und Ausblick.
