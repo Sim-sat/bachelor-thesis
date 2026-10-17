@@ -20,13 +20,13 @@
   if query(heading.where(level: 1)).any(h => h.location().page() == page) { return }
   let before = query(heading.where(level: 1).before(here()))
   if before.len() == 0 { return }
-  let h = before.last()
+  let hd = before.last()
   set text(size: 10pt, style: "italic")
-  if h.numbering != none {
-    numbering(h.numbering, ..counter(heading).at(h.location()))
+  if hd.numbering != none {
+    numbering(hd.numbering, ..counter(heading).at(hd.location()))
     h(0.6em)
   }
-  h.body
+  hd.body
   v(-0.6em)
   line(length: 100%, stroke: 0.4pt)
 }

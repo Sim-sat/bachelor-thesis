@@ -1,15 +1,17 @@
 #import "../template.typ": *
 
-= Evaluation <evaluation>
+= Konzept <konzept>
 
-// Annotiertes Teilsample, Metriken, Ergebnisse je Variante, Kosten und Laufzeit.
+// Was als Ereignis gilt, welche Attribute erfasst werden und wie die Pipeline aufgebaut ist.
 
-== Metriken
+== Ereignisdefinition
 
-Beispiel für eine nummerierte Gleichung (@eq:f1):
+Text …
 
-$ F_1 = 2 dot (P dot R) / (P + R) $ <eq:f1>
+== Ereignisschema
 
-== Ergebnisse
+Text …
+
+== Aufbau der Pipeline
 
 Text …

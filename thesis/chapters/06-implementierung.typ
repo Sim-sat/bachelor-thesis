@@ -1,7 +1,17 @@
 #import "../template.typ": *
 
-= Diskussion <diskussion>
+= Implementierung <implementierung>
 
-// Interpretation der Ergebnisse, Grenzen der Arbeit, Beantwortung der Forschungsfrage.
+// Technischer Aufbau, Prompt-Design, Speicherung der Ergebnisse.
+
+== Aufbau
+
+Text …
+
+== Prompt-Design
+
+Text …
+
+== Speicherung
 
 Text …

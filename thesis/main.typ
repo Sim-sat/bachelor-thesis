@@ -26,7 +26,7 @@
 
 #include "chapters/01-einleitung.typ"
 #include "chapters/02-grundlagen.typ"
-#include "chapters/03-verwadte-arbeiten.typ"
+#include "chapters/03-verwandte-arbeiten.typ"
 #include "chapters/04-datengrundlage.typ"
 #include "chapters/05-konzept.typ"
 #include "chapters/06-implementierung.typ"

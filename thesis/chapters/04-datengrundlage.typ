@@ -11,6 +11,13 @@ Die kostenlose API des Guardian hat sich als geeigneter Korpus angeboten, da die
 
 Es wurden insgesamt 475 Artikel aus der Rubik _World_ abgerufen. Dabei wurde sich beschränkt auf den gesamten Semptember 2026. Die API Antwort wurde mithilfe eines Python Skripts in einer JSONL Datei gespeichert. JSONL bietet in diesem Fall den Vorteil, dass es gestreamt werden kann, was bei der Datenmenge deutlich Performance-Vorteile ergibt. Mithilfe des Parameters ` "show-tags": "tone,series"` werden die Typen der Artikel aufgelistet, die dann mit @lst:laden zusammengefasst werden können. Die Verteilung der Artikeltypen zeigt @tab:artikeltypen.
 
+== Vorbereitung
+
+Da die API viele Felder mitliefert, die nicht notwendig sind, wurden die überflüssigen Felder mithilfe eines Python-Skripts entfernt. In der Sichtung der Daten sind einige Unstimmigkeiten aufgefallen:
++ Einige Inhalte enthalten Breitenlose Leerzeichen (U+200B–U+200D, U+2060 und U+FEFF)
++ Teilweise beinhalten sie Korrekturhinweise
+Es wurde sich bewusst gegen die Bereinigung dieser Probleme entschieden, um die Robustheit gegenüber realen Texten zu prüfen.
+
 
 
 #figure(
