@@ -4,17 +4,22 @@
 
 == Auswahl des Korpus
 
-Die kostenlose API des Guardian hat sich als geeigneter Korpus angeboten, da die Artikel aktuell sind und über alle notwendigen Attribute verfügen.
+Die kostenlose #acr("API") des Guardian hat sich als geeigneter Korpus angeboten, da die Artikel aktuell sind und über alle notwendigen Attribute verfügen. Dazu zählen:
+- Titel
+- Volltext
+- Tags
+- Zeitstempel
+Da die Ergebnisse außerdem auf tatsächlichen Artikel basieren (sichtbar durch das Attribut `webUrl`), gibt es im Vergleich zu gescrapten Sammlungen deutlich weniger Rauschen.
 
 
 == Abruf und Umfang
 
-Es wurden insgesamt 475 Artikel aus der Rubik _World_ abgerufen. Dabei wurde sich beschränkt auf den gesamten Semptember 2026. Die API Antwort wurde mithilfe eines Python Skripts in einer JSONL Datei gespeichert. JSONL bietet in diesem Fall den Vorteil, dass es gestreamt werden kann, was bei der Datenmenge deutlich Performance-Vorteile ergibt. Mithilfe des Parameters ` "show-tags": "tone,series"` werden die Typen der Artikel aufgelistet, die dann mit @lst:laden zusammengefasst werden können. Die Verteilung der Artikeltypen zeigt @tab:artikeltypen.
+Es wurden insgesamt 475 Artikel aus der Rubrik _World_ abgerufen. Der Zeitraum wurde beschränkt auf den gesamten September 2026. Der Grund dafür die ist, das der gesamten Korpus aktuell über 2 Millionen Einträge besitzt, was hohe Kosten in der Untersuchung erzeugen würden. Außerdem sollte so die Chance auf Artikel erhöht werden, die über dieselben Ereignise schreiben, um die Gruppierung der Ereignisse zu untersuchen. Die #acr("API") Antwort wurde mithilfe eines Python Skripts in einer #acr("JSONL") Datei gespeichert. #acr("JSONL") bietet in diesem Fall den Vorteil, dass jede Zeile ein Artikel ist und die Datei Zeile für Zeile verarbeitet und erweitert werden kann. Mithilfe des Parameters ` "show-tags": "tone,series"` werden die Typen der Artikel aufgelistet, die dann mit @lst:laden zusammengefasst werden können. Die Verteilung der Artikeltypen zeigt @tab:artikeltypen. Zusätzlich wurden Meinungsbeiträge (tone/comment) über die #acr("API") ausgeschlossen. Das Betraf im gewählten Zeitraum nur einen Artikel.
 
 == Vorbereitung
 
-Da die API viele Felder mitliefert, die nicht notwendig sind, wurden die überflüssigen Felder mithilfe eines Python-Skripts entfernt. In der Sichtung der Daten sind einige Unstimmigkeiten aufgefallen:
-+ Einige Inhalte enthalten Breitenlose Leerzeichen (U+200B–U+200D, U+2060 und U+FEFF)
+Da die #acr("API") viele Felder mitliefert, die nicht notwendig sind, wurden die überflüssigen Felder mithilfe eines Python-Skripts entfernt. In der Sichtung der Daten sind einige Unstimmigkeiten aufgefallen:
++ 116 Artikel enthalten breitenlose Zeichen (insgesamt 907) @lst:zero-width
 + Teilweise beinhalten sie Korrekturhinweise
 Es wurde sich bewusst gegen die Bereinigung dieser Probleme entschieden, um die Robustheit gegenüber realen Texten zu prüfen.
 
@@ -30,6 +35,15 @@ Es wurde sich bewusst gegen die Bereinigung dieser Probleme entschieden, um die 
   ```,
   caption: [Übersicht der Artikel Typen],
 ) <lst:laden>
+
+#figure(
+  ```bash
+  jq '[.body | scan("[\u200b-\u200d\u2060\ufeff]")] | length' guardian_world_2026-09.clean.jsonl \
+          | awk '{s+=$1; if($1>0)n++} END {print s, "Zeichen in", n, "Artikeln"}'
+
+  ```,
+  caption: [Zählen der breitenlosen Zeichen],
+) <lst:zero-width>
 
 
 

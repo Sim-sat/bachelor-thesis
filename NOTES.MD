@@ -76,6 +76,14 @@
 9. Fazit und Ausblick
 Anhang: Prompts, Schema, Beispielausgaben
 
+## Umfang
+- **Max. 60 Seiten gesamt** (inkl. Deckblatt, Verzeichnisse, Literatur, Anhang/Quelltext)
+- Overhead ca. 16–18 S. (Deckblatt 1, Inhalt 2, Abb./Tab./Quelltext je 1, Abkürzungen 1, Literatur 3–4, Erklärung 1, Anhang 5–6) → Hauptteil ~42 S., davon ~3–4 S. Leerraum durch Seitenumbruch je Kapitel
+- Budget Hauptteil: Einleitung 2 · Grundlagen 5–6 · Verwandte Arbeiten 3–4 · Datengrundlage 3–4 · Konzept 5 · Implementierung 4 · **Evaluation 10** · Diskussion 3 · Fazit 1–2
+- Platz sparen: Abb./Tab./Quelltextverzeichnis auf eine Seite; Quelltextverzeichnis ggf. streichen; Anhang knapp, Rest ins Repo
+- TODO: Eigenständigkeitserklärung in Vorlage ergänzen
+- Literatur: Ziel 25–35 Quellen
+
 ## Stand der Kapitel (17.10.2026)
 - 01 Einleitung: Motivation + Forschungsfrage aus Exposé übernommen; Aufbau fehlt
 - 02 Grundlagen: nur Gerüst mit Platzhaltern
