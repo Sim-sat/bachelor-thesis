@@ -47,7 +47,7 @@
 - Briefings (z. B. Ukraine war briefing) sehr ereignisdicht; Newsletter enthalten viel Rauschen und Ereignisse anderer Ressorts
 - Zero-Width-Zeichen (stehen roh in der Datei, vor einzelnen Wörtern; Agentur-Tracking): 525× U+2060, 387× U+200C, 34× U+200B, in ~100 Artikeln. In Neovim: `/\%u200c`. Falls bei der Evaluation Strings exakt verglichen werden → dort normalisieren, nicht in den Daten
 - ` • ` hat mehrere Bedeutungen, darf **nicht** pauschal abgeschnitten werden:
-  - Korrekturhinweise („This article was amended on …“): 22 Artikel → prüfen, ob das LLM sie als Ereignis ausgibt
+  - Korrekturhinweise („This article was amended on …“): 23 Artikel (22 hinter ` • `, 1 ohne) → prüfen, ob das LLM sie als Ereignis ausgibt
   - Trenner zwischen Leserbriefen (letters)
   - Lebensdaten in Nachrufen („born …; died …“) – echte Ereignisse
   - Boilerplate: Leserbrief-Fußzeile (10×), Leserbrief-Aufruf (1×), Hinweise auf Hilfsangebote (2×)

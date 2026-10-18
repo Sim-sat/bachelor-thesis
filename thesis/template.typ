@@ -217,6 +217,17 @@
 
   // Verweise, Zitate, URLs
   show ref: set text(fill: darkblue)
+  // Kapitelnummer am Ort der Abbildung bestimmen, nicht am Ort des Verweises
+  show ref: it => {
+    let el = it.element
+    if el == none or el.func() != figure or el.numbering == none { return it }
+    context {
+      let loc = el.location()
+      let fmt = _chapter-numbering.at(loc) + ".1"
+      let num = numbering(fmt, counter(heading).at(loc).first(), ..el.counter.at(loc))
+      link(loc, [#el.supplement~#num])
+    }
+  }
   show cite: set text(fill: darkred)
   show link: it => if type(it.dest) == str { text(fill: blue, it) } else { it }
 
