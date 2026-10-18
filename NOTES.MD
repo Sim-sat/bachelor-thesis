@@ -53,34 +53,53 @@
   - Boilerplate: Leserbrief-Fußzeile (10×), Leserbrief-Aufruf (1×), Hinweise auf Hilfsangebote (2×)
 - HTML (`<strong>`) nur in `trailText` (14 Leserbriefe) – irrelevant, da `trailText` nicht ans LLM geht
 - Relative Zeitangaben („on Tuesday“, „six months ago“) → über `published` auflösen; Datum mit Präzisionsangabe
-- Offene Schema-Fragen: historische Ereignisse, angekündigte Ereignisse (Status `geplant`), Behauptungen vs. bestätigte Fakten
+- Schema-Fragen entschieden (18.10.): historische Ereignisse ja (mit Datum); geplante nur wenn beschlossen/angekündigt (Status `geplant`); Aussagen keine Ereignisse; Behauptungen werden übernommen wie berichtet → Entwurf in `05-konzept.typ`
 
-## Abgleich mit dem Exposé – offene Entscheidungen
-- **„Wichtigste Ereignisse“**: Exposé definiert sie als Ereignisse, über die ein Artikel hauptsächlich berichtet. Entscheiden: nur Hauptereignisse (wenige je Artikel, Gold-Set billiger) oder alle Ereignisse. Bestimmt Schema, Gold-Set-Aufwand und Evaluation
-- **Gruppierung gleicher Ereignisse über Artikel hinweg** (Embeddings/LLM) steht im Exposé als „sollen“, fehlt aber im Plan → einplanen oder mit Betreuer klären
-- **Varianten**: Exposé nennt Modellwahl, Einstellungen (Reasoning), Prompt, optional Freitext vs. JSON-Schema; Plan sieht nur einen Vergleich vor → Forschungsfrage in der Einleitung ggf. eingrenzen
+## Entscheidungen (18.10.2026, mit Betreuer zu besprechen)
+- **Gruppierung gleicher Ereignisse über Artikel hinweg: wird gemacht** (laut Betreuer freiwillig; Embeddings/LLM), eigene Evaluation
+- **Mehrere Vergleiche** (Modell, Einstellungen/Reasoning, Prompt; optional Freitext vs. JSON-Schema) – Forschungsfrage bleibt wie im Exposé
+- **Gold-Set wird allein annotiert** → Annotationsleitfaden + Intra-Annotator-Übereinstimmung
+- **60 Seiten inkl. Anhang mit Code**
+- Entschieden: alle Ereignisse laut Definition (nicht nur Hauptereignisse), Attribut Rolle Haupt/Neben → Auswertung auf beiden Ebenen möglich; Kontextereignisse wichtig für Gruppierung
+- Vorher offen: „wichtigste Ereignisse“ – Exposé: Ereignisse, über die ein Artikel hauptsächlich berichtet. Nur Hauptereignisse (wenige je Artikel, Gold-Set billiger) oder alle? Bestimmt Schema, Gold-Set-Aufwand und Evaluation
 - Gewichtung (Jev/Decision Model) im Exposé optional → weglassen
-- Exposé: ca. 1000 Artikel, Korpus hat 475 – im Datenkapitel kurz begründen (Zeitfenster ein Monat, damit Ereignisse mehrfach vorkommen)
+- Exposé: ca. 1000 Artikel, Korpus hat 475 – im Datenkapitel begründet (Zeitfenster ein Monat)
 - Uhrzeit wird im Exposé als Attribut genannt; Gold-Set muss sie dann enthalten
 - Kosten, Laufzeit, Fehlerrate (ungültige Ausgaben) mit erfassen
 
 ## Gliederung
 1. Einleitung (Motivation, Forschungsfrage, Aufbau)
-2. Grundlagen (Event Extraction, LLMs/strukturierte Ausgabe, Metriken)
+2. Grundlagen (Event Extraction, LLMs/strukturierte Ausgabe, Embeddings, Metriken)
 3. Verwandte Arbeiten
 4. Datengrundlage (Korpusauswahl, Abruf, Zusammensetzung, Vorverarbeitung)
-5. Konzept (Ereignisdefinition, Schema, Pipeline)
+5. Konzept (Ereignisdefinition, Schema, Pipeline, Gruppierung, Varianten)
 6. Implementierung (Aufbau, Prompt-Design, Speicherung)
-7. Evaluation (Gold-Set, Matching, Ergebnisse gesamt/je Typ, Fehleranalyse)
+7. Evaluation (Gold-Set, Matching, Ergebnisse gesamt/je Typ/je Variante, Gruppierung, Fehleranalyse)
 8. Diskussion (Einordnung, Limitationen)
 9. Fazit und Ausblick
-Anhang: Prompts, Schema, Beispielausgaben
+Anhang: Prompts, Schema, Annotationsleitfaden, Skripte
 
 ## Umfang
-- **Max. 60 Seiten gesamt** (inkl. Deckblatt, Verzeichnisse, Literatur, Anhang/Quelltext)
-- Overhead ca. 16–18 S. (Deckblatt 1, Inhalt 2, Abb./Tab./Quelltext je 1, Abkürzungen 1, Literatur 3–4, Erklärung 1, Anhang 5–6) → Hauptteil ~42 S., davon ~3–4 S. Leerraum durch Seitenumbruch je Kapitel
-- Budget Hauptteil: Einleitung 2 · Grundlagen 5–6 · Verwandte Arbeiten 3–4 · Datengrundlage 3–4 · Konzept 5 · Implementierung 4 · **Evaluation 10** · Diskussion 3 · Fazit 1–2
-- Platz sparen: Abb./Tab./Quelltextverzeichnis auf eine Seite; Quelltextverzeichnis ggf. streichen; Anhang knapp, Rest ins Repo
+- **Max. 60 Seiten gesamt** (inkl. Deckblatt, Verzeichnisse, Literatur, Anhang mit Code)
+- Rest außer Hauptteil ca. 18–19 S.: Deckblatt 1, Inhalt 2, Abb./Tab./Quelltext 3, Abkürzungen 1, Literatur 3–4, Erklärung 1, Anhang 7
+- Hauptteil max. ~41 S. (inkl. Leerraum durch Seitenumbruch je Kapitel)
+
+| Kapitel | Plan | Stand 18.10. |
+|---|---|---|
+| 1 Einleitung | 2 | ⅓ (Motivation + Frage aus Exposé) |
+| 2 Grundlagen | 5 | Gerüst |
+| 3 Verwandte Arbeiten | 3 | Gerüst |
+| 4 Datengrundlage | 3 | ~1¼ (Entwurf fertig) |
+| 5 Konzept | 7 | Gerüst |
+| 6 Implementierung | 4 | Gerüst |
+| 7 Evaluation | 12 | Gerüst (F1-Formel) |
+| 8 Diskussion | 3 | Gerüst |
+| 9 Fazit | 2 | Gerüst |
+| **Hauptteil** | **41** | |
+| Anhang | 7 | 2 (Skripte B.1–B.3) |
+
+- Schreibreihenfolge: 4 → 5 (mit Prototyp) → 6 → 7 → 2/3 (laufend nebenbei) → 8 → 1 → 9; Anhang laufend
+- Platz sparen: Abb./Tab./Quelltextverzeichnis auf eine Seite; Quelltextverzeichnis ggf. streichen
 - TODO: Eigenständigkeitserklärung in Vorlage ergänzen
 - Literatur: Ziel 25–35 Quellen
 
