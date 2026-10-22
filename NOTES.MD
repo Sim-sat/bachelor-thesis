@@ -58,7 +58,7 @@
 ## Entscheidungen (18.10.2026, mit Betreuer zu besprechen)
 - **Gruppierung gleicher Ereignisse über Artikel hinweg: wird gemacht** (laut Betreuer freiwillig; Embeddings/LLM), eigene Evaluation
 - **Mehrere Vergleiche** (Modell, Einstellungen/Reasoning, Prompt; optional Freitext vs. JSON-Schema) – Forschungsfrage bleibt wie im Exposé
-- **Gold-Set wird allein annotiert** → Annotationsleitfaden + Intra-Annotator-Übereinstimmung
+- **Referenzannotation wird allein erstellt** → Annotationsleitfaden + Intra-Annotator-Übereinstimmung
 - **60 Seiten inkl. Anhang mit Code**
 - Entschieden: alle Ereignisse laut Definition (nicht nur Hauptereignisse), **keine Rolle Haupt/Neben** – „wichtigste Ereignisse“ beantwortet die weltweite Gewichtung; Kontextereignisse wichtig für Gruppierung
 - Schema (19.10.): `description` (Englisch, ein Satz), `date` (Zeitpunkt bzw. Beginn, kein Enddatum), `date_precision` (day/month/year), `status` (occurred/planned); keine Uhrzeit (im Text begründen, Exposé nennt sie)
@@ -69,8 +69,12 @@
   - B: Datum muss sich auf das Geschehen beziehen; nur das Datum der Meldung („officials said on Tuesday that Russia attacked …“) reicht nicht → kein Ereignis
   - C: Geplant ohne Termin/Zeitraum (Konsulat Bonn „will be closed“) → kein Ereignis
   - Ergebnis Zeile 16: 4 Ereignisse (Großangriff Kyjiw 01.09., Lokdepot 01.09., Angriff Novatek Ust-Luga 01.09., Klepach verliert Posten 2026-08)
+  - Ergebnis Zeile 9 (Norwegen, 22.10.): 6 Ereignisse (Eid Haakon 01.09., Harald stirbt 28.08., Haakon wird König 28.08., Mette-Marit fehlt 01.09., Lungentransplantation 2026-06, Beerdigung 09.09. geplant). Hintergrund mit Zeitangabe zählt (Transplantation); Menschenmengen am Palast ohne Datum → nein; Umfragen = Statistik; Weihe in Trondheim „may“ → nein
+  - Referenzannotation der Pilotartikel: `ref/pilot.csv` (10 Ereignisse)
   - Folge von B: LLM wird solche Ereignisse oft trotzdem extrahieren → Regel explizit in den Prompt; in Fehleranalyse beobachten
-- Vorher offen: „wichtigste Ereignisse“ – Exposé: Ereignisse, über die ein Artikel hauptsächlich berichtet. Nur Hauptereignisse (wenige je Artikel, Gold-Set billiger) oder alle? Bestimmt Schema, Gold-Set-Aufwand und Evaluation
+  - Erster Lauf (22.10., `extract.py`, claude-haiku-5-5, Effort Standard medium, Structured Outputs) auf Zeile 9 + 16 → `runs/pilot_haiku.csv`: Norwegen 6/6; Ukraine 4/4 + 2 zu viel, beide Regel B („officials said on Tuesday“, „Naftogaz said“) → P 0,83, R 1,0. Prompt bewusst eingefroren (nicht an 2 Artikeln optimieren)
+  - Kosten: 4.265 in / 2.902 out Tokens ≈ 0,002 $; ganzer Korpus ≈ 0,50–0,70 $. Output (inkl. Denk-Tokens) ≈ ¾ der Kosten → Effort-Variante
+- Vorher offen: „wichtigste Ereignisse“ – Exposé: Ereignisse, über die ein Artikel hauptsächlich berichtet. Nur Hauptereignisse (wenige je Artikel, Referenzannotation billiger) oder alle? Bestimmt Schema, Annotationsaufwand und Evaluation
 - **Gewichtung = weltweite Bedeutung, nach der Gruppierung je Gruppe** (nicht im Extraktionsschema)
   - Vergleich: Gruppengröße (Basis) vs. **Jev** (TypeSafe, Fragetyp Score mit Rubrik 1–5, liefert Score + Konfidenz) vs. Claude mit gleicher Rubrik
   - Referenz: Wikipedia-Portal „Current events“ September 2026 (vorher prüfen, ob ausreichend gepflegt)
@@ -91,7 +95,7 @@
     - Größte Unterschiede: Altman/Amodei vor UN-Sicherheitsrat (Jev 3,89 vs. 3,28), Russland trifft Geheimdienst-HQ (2,87 vs. 2,42), Hormus (3,25 vs. 3,50)
     - Achtung: Claude-„Wahrscheinlichkeiten“ waren selbst angegeben, nicht vom Modell berechnet; in der Arbeit Claude per API mit festem Prompt, mehreren Läufen bzw. Logprobs/Wiederholungen
 - Exposé: ca. 1000 Artikel, Korpus hat 475 – im Datenkapitel begründet (Zeitfenster ein Monat)
-- Uhrzeit wird im Exposé als Attribut genannt; Gold-Set muss sie dann enthalten
+- Uhrzeit wird im Exposé als Attribut genannt; Referenzannotation müsste sie dann enthalten
 - Kosten, Laufzeit, Fehlerrate (ungültige Ausgaben) mit erfassen
 
 ## Gliederung
@@ -101,7 +105,7 @@
 4. Datengrundlage (Korpusauswahl, Abruf, Zusammensetzung, Vorverarbeitung)
 5. Konzept (Ereignisdefinition, Schema, Pipeline, Gruppierung, Varianten)
 6. Implementierung (Aufbau, Prompt-Design, Speicherung)
-7. Evaluation (Gold-Set, Matching, Ergebnisse gesamt/je Typ/je Variante, Gruppierung, Fehleranalyse)
+7. Evaluation (Referenzannotation, Matching, Ergebnisse gesamt/je Typ/je Variante, Gruppierung, Fehleranalyse)
 8. Diskussion (Einordnung, Limitationen)
 9. Fazit und Ausblick
 Anhang: Prompts, Schema, Annotationsleitfaden, Skripte
@@ -139,8 +143,8 @@ Anhang: Prompts, Schema, Annotationsleitfaden, Skripte
 - Literatur: 4 Einträge (Doddington2004, Brown2020, Reimers2019 + 1)
 
 ## Plan
-- **Vor Anmeldung:** ~~Vorverarbeitung~~, Datenkapitel fertig, Ereignisdefinition/Schema + Annotationsleitfaden entwerfen, Extraktions-Prototyp an 10–20 Artikeln, 5 Artikel probeannotieren (Zeit messen), Matching-Regel festlegen, Literatur sammeln, Rückfragen an Betreuer (Ein-Personen-Gold-Set ok? Umfang? Gruppierung Pflicht?)
-- **Monat 1:** Schema einfrieren; Gold-Set (~50 Artikel, geschichtet nach Typ, fester Seed; Größe nach Probeannotation anpassen) annotieren *bevor* Prompts optimiert werden; Pipeline über alle 475 Artikel (Modellversion/Temperature fixieren, Rohausgaben speichern), Konzept- und Implementierungskapitel
+- **Vor Anmeldung:** ~~Vorverarbeitung~~, Datenkapitel fertig, Ereignisdefinition/Schema + Annotationsleitfaden entwerfen, Extraktions-Prototyp an 10–20 Artikeln, 5 Artikel probeannotieren (Zeit messen), Matching-Regel festlegen, Literatur sammeln, Rückfragen an Betreuer (Referenzannotation durch eine Person ok? Umfang? Gruppierung Pflicht?)
+- **Monat 1:** Schema einfrieren; Referenzannotation (~80 Artikel, geschichtet nach Typ, fester Seed; Größe nach Probeannotation anpassen) erstellen *bevor* Prompts optimiert werden; Pipeline über alle 475 Artikel (Modellversion/Temperature fixieren, Rohausgaben speichern), Konzept- und Implementierungskapitel
 - **Monat 2:** Evaluationsskript (Precision/Recall/F1, je Artikeltyp), genau ein Vergleich (Prompt- oder Modellvariante), ~10 Artikel erneut annotieren (Intra-Annotator-Übereinstimmung), Ergebniskapitel + Fehleranalyse
 - **Monat 3:** Grundlagen/verwandte Arbeiten fertig, Diskussion, Einleitung/Fazit zuletzt, Korrektur; letzte 2 Wochen Puffer
 - Arbeitsweise: nach jeder Coding-Session Stichpunkte ins passende Kapitel

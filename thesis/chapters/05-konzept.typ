@@ -82,7 +82,7 @@ Text …
 // - Extraktion: Modellwahl, Einstellungen (Reasoning), Prompt; optional Freitext vs. JSON-Schema
 // - Gruppierung: Embeddings vs. LLM vs. Kombination
 // - Gewichtung: Gruppengröße vs. Jev vs. Claude
-// - Alle Extraktionsvarianten werden gegen dasselbe Gold-Set ausgewertet
+// - Alle Extraktionsvarianten werden gegen dieselbe Referenzannotation ausgewertet
 // - Offen: konkrete Modelle und Prompt-Varianten festlegen (nach Prototyp)
 
 Text …
