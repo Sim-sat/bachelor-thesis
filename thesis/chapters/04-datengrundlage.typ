@@ -11,7 +11,7 @@ Die über die kostenlose #acr("API") abrufbaren Artikel des Guardian @GuardianAP
 
 Die Rubrik _World_ umfasst insgesamt rund 237.000 Artikel#footnote[Feld `total` der Antwort auf `/search?section=world&type=article`, abgerufen am 18.10.2026.], weshalb der Zeitraum auf September 2026 beschränkt wurde. Außerdem sollte so die Chance auf Artikel erhöht werden, die über dieselben Ereignisse schreiben, um die Gruppierung der Ereignisse zu untersuchen. Die #acr("API")-Antwort wurde mithilfe eines Python-Skripts in einer #acr("JSONL")-Datei gespeichert. #acr("JSONL") bietet in diesem Fall den Vorteil, dass jede Zeile ein Artikel ist und die Datei Zeile für Zeile verarbeitet und erweitert werden kann. Mithilfe des Parameters `show-tags=tone,series` werden die Typen der Artikel aufgelistet, die dann zusammengefasst werden können (siehe Anhang, @lst:laden). Die Verteilung der Artikeltypen zeigt @tab:artikeltypen. Für Artikel, die mehrere Typen haben (immer _news_ und ein weiterer), wurde der spezifischere gewählt. Zusätzlich wurden Meinungsbeiträge (`tone/comment`) über die #acr("API") ausgeschlossen. Das betraf im gewählten Zeitraum nur einen Artikel.
 
-== Vorbereitung
+== Vorbereitung <sec:vorbereitung>
 
 Da die #acr("API") viele Felder mitliefert, die nicht notwendig sind, wurden die überflüssigen Felder mithilfe eines Python-Skripts entfernt. Übrig bleiben die Felder `id`, `published`, `headline` und `body`.
 

@@ -5,11 +5,19 @@
 
 == Ereignisdefinition
 
-Ein Ereignis ist ein konkretes Geschehnis, das im Artikel explizit als stattgefunden oder als fest geplant berichtet wird. Als fest geplant gelten Ereignisse mit konkretem Termin oder offizieller Ankündigung. Sie werden mit dem Attribut _Status_ gesondert gekennzeichnet. Einem Ereignis ist zwingend ein Zeitpunkt oder Zeitraum zugeordnet, wobei die Präzision variieren kann (z. B. Tag, Monat, Jahr). Allerdings muss die Zeitangabe im Artikel selbst stehen, da nicht das Allgemeinwissen des #acr("LLM") geprüft werden soll.  Spekulative oder hypothetische Geschehnisse („is expected to“, „likely“, „may“) gelten nicht als Ereignis. Ebenfalls ausgeschlossen sind Zustände, Meinungen und Bewertungen sowie statistische Angaben. Aussagen sind selbst keine Ereignisse. Gibt eine Aussage jedoch ein Geschehnis wieder, wird dieses als Ereignis erfasst. Maßgeblich ist allein die Darstellung im Artikel: Der Wahrheitsgehalt der berichteten Ereignisse wird nicht überprüft, da dies den Rahmen der Arbeit überschreiten würde. Ereignisse mit unterschiedlichen Hauptakteuren werden als getrennte Ereignisse betrachtet, auch wenn sie kausal zusammenhängen und/oder zeitgleich eintreten (z.~B. König Harald stirbt, Haakon wird König). Jedes Ereignis wird berichtet mit folgenden Attributen: Beschreibung(ein Satz), Datum, Datumspräzision und Status.
+Ein Ereignis ist ein konkretes Geschehnis, das im Artikel explizit als stattgefunden oder als fest geplant berichtet wird. Als fest geplant gelten Ereignisse mit konkretem Termin oder offizieller Ankündigung. Sie werden mit dem Attribut _Status_ gesondert gekennzeichnet. Einem Ereignis ist zwingend ein Zeitpunkt oder Zeitraum zugeordnet, wobei die Präzision variieren kann (z. B. Tag, Monat, Jahr). Allerdings muss die Zeitangabe im Artikel selbst stehen, da nicht das Allgemeinwissen des #acr("LLM") geprüft werden soll.
+
+Spekulative oder hypothetische Geschehnisse („is expected to“, „likely“, „may“) gelten nicht als Ereignis. Ebenfalls ausgeschlossen sind Zustände, Meinungen und Bewertungen sowie statistische Angaben. Aussagen sind selbst keine Ereignisse. Gibt eine Aussage jedoch ein Geschehnis wieder, wird dieses als Ereignis erfasst. Maßgeblich ist allein die Darstellung im Artikel: Der Wahrheitsgehalt der berichteten Ereignisse wird nicht überprüft, da dies den Rahmen der Arbeit überschreiten würde.
+
+Ereignisse mit unterschiedlichen Hauptakteuren werden als getrennte Ereignisse betrachtet, auch wenn sie kausal zusammenhängen und/oder zeitgleich eintreten (z.~B. König Harald stirbt, Haakon wird König). Teilereignisse mit eigenem Ort werden als eigenes Ereignis gezählt. Ist nur bekannt, wann ein Ereignis berichtet wurde und nicht wann es stattgefunden hat, wird es nicht als Ereignis gezählt, da dies zu deutlichen Fehlern führen kann. Beispielsweise würden dann erwähnte historische Ereignisse als aktuelles Ereignis gesehen werden.
 
 == Ereignisschema
 
-Text …
+Aus der Definition folgt das Schema in @tab:schema, das Beispiel steht in @tab:schema-beispiel. Da alle Artikel Englisch sind, wird die Beschreibung ebenfalls auf Englisch erstellt um Übersetzungsfehler zu vermeiden. Außerdem sollte die Fähigkeit des #acr("LLM") Texte zu übersetzen, sollte nicht Bestandteil dieser Untersuchung sein.
+
+Es wird nur das Datum eines Ereignisses gespeichert, im Falle eines Zeitraums das Startdatum. Dies reicht aus zur Sortierung und Gruppierung. Die Genauigkeit der Zeitangabe wird im Attribut `date_precision` angegeben. Teilweise geben Artikel nur den Monat oder das Jahr eines Ereignisses an. Ohne dieses Attribut könnte Ereignisse ohne Tagangabe nicht richtig erfasst werden, obwohl sie nach der Definition valide Ereignisse sind. Es wurde bewusst darauf verzichtet, die Zeitangabe weiter zu spezifizieren, beispielsweise mit Uhrzeit, da diese selten in Artikeln steht und auch nicht notwendig ist für die weitere  Betrachtung.
+
+Felder für die Akteure eines Ereignisses werden ebenfalls nicht benutzt, da dies die Annotation und Auswertung stark verkomplizieren würde. Akteure sollten direkt in dem Attribut `description` genannt werden. Die Gewichtung der Ereignisse erfolgt noch nicht in diesem Schritt, da sie gruppierte Ereignisse voraussetzt (@sec:gewichtung).
 
 #figure(
   table(
@@ -42,12 +50,8 @@ Text …
 
 == Aufbau der Pipeline <sec:pipeline>
 
-// - Überblick als Abbildung: Artikel → Extraktion (LLM) → Ereignisse → Gruppierung → Gewichtung → CSV/SQLite
-// - Eingabe je Artikel: `published`, `headline`, `body` (kein Artikeltyp, damit er die Extraktion nicht beeinflusst)
-// - `published` nötig, um relative Zeitangaben aufzulösen ("on Friday" → 2026-08-28)
-// - Definition und Regeln A–C (Teilgeschehen, Datum der Meldung, geplant ohne Termin) explizit im Prompt
+Nach der Vorbereitung (@sec:vorbereitung) wird nun ein Python-Skript aufgerufen, das pro Artikel einen #acr("LLM")-Aufruf durchführt. Die Ausgabe geschieht mit einem definierten JSON-Schema (Structured Output), welches dann in die gewünschte CSV-Datei umgewandelt wird.
 
-Text …
 
 == Gruppierung <sec:gruppierung>
 
