@@ -8,4 +8,5 @@
   JSONL: ("JSONL", "JSON Lines"),
   LLM: ("LLM", "Large Language Model"),
   NLP: ("NLP", "Natural Language Processing"),
+  IE: ("IE", "Informationsextraktion"),
 )
