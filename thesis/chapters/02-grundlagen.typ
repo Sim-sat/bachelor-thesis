@@ -6,9 +6,18 @@ Dieses Kapitel führt die Begriffe und Verfahren ein, auf denen die weiteren Kap
 
 == Große Sprachmodelle <sec:llm>
 
-// zeros-shot, few shot
-// structured output
-// prompting
+#acr("LLM")s basieren auf der Transformer-Architektur @Vaswani2017. Sie sind autoregressive Sprachmodelle: Sie erzeugen Text Token für Token, indem sie jeweils das wahrscheinlichste nächste Token vorhersagen @Brown2020[S. 1]. Ein Token ist dabei ein Wort oder Wortteil aus einem festen Vokabular @Jurafsky2026[Abschn. 2.4]. Die Fähigkeiten eines Modells stecken in seinen Parametern, den beim Training gelernten Gewichten des neuronalen Netzes @Jurafsky2026[Kap. 6]. GPT-3 hat beispielsweise 175 Mrd. Parameter @Brown2020[S. 1].
+
+Ein #acr("LLM") muss für eine neue Aufgabe nicht neu trainiert werden. Die Aufgabe wird als Text in natürlicher Sprache, dem sogenannten _Prompt_, formuliert und das Modell erzeugt die Antwort ohne Änderung seiner Parameter @Brown2020[S.3]. Je nachdem wie viele Beispiele der Prompt enthält, wird zwischen Zero-, One- und Few-Shot unterschieden. Few-Shot Prompts geben dem #acr("LLM") mehrere Beispiele der Aufgabe mit, bei GPT-3 zwischen 10 und 100 @Brown2020[S. 6]. Je größer das Modell, desto effektiver wird die Few-Shot-Strategie @Brown2020[fig. 1.3]. One-Shot hingegen gibt nur ein Beispiel mit und ähnelt eher dem Weg, wie anderen Menschen Aufgaben erklärt werden. Zero-Shot Prompts geben keine Beispiele mit, sondern nur eine Beschreibung der Aufgabe in Sprache. Je nach Aufgabe ist dies nicht genau genug, sodass selbst Menschen keine eindeutige Antwort liefern können @Brown2020[S. 7]. Diese Arbeit nutzt few-shot und zero-shot und vergleicht diese @sec:varianten.
+
+Ein vortrainiertes Modell setzt nur Text fort und ist nicht automatisch gut darin Anweisungen zu folgen. Außerdem können die Antworten des #acr("LLM") wenig hilfreich oder sogar gefährlich sein, beispielsweise wenn zu Gewalt geraten wird. Beim _instruction tuning_ wird das Modell auf einem Korpus von Anweisungen und gewünschten Antworten nachtrainiert, sodass es lernt Aufgabenbeschreibungen zu folgen. Anschließend wird es mithilfe menschlicher Bewertungen an Präferenzen wie Hilfsbereitschaft und Unschädlichkeit angepasst. Dabei kann zum Beispiel Reinforcment Learning from Human Feedback (RLHF) eingesetzt werden @Jurafsky2026[Chapter 8.1]. Kommerzielle modelle wie Chat-GPT oder Claude durchlaufen diese Schritte schon beim Anbieter und sind so erst in der Lage Aufgaben wie die Ereignisextraktion mit Zero-Shot Prompts zu lösen. Ein aufgabenspezifisches Nachtrainieren wie bei GoLLIE (@sec:ereignisextraktion) findet in dieser Arbeit nicht statt.
+
+Ein weiteres Problem sind die sogenannten Halluzinationen eines #acr("LLM")s. Halluzinationen beschreiben das Generieren von Inhalt, der faktisch nicht der Wahrheit entspricht (Factuality hallucination) oder keinen Bezug mehr zur Aufgabe hat bzw. von der Eingabe des Nutzers abweicht (faithfulness hallucination). Faithfulness hallucinations lassen sich in drei Untertypen unterteilen:
+/ Context Inconsistency: Die Ausgabe passt nicht zur Eingabe. Beispielsweise wird ein tatsächlich aufgetretenes Event einem anderen Artikel zugeordnet
+/ Instruction Inconsistency: Die Ausgabe ist zwar richtig, aber verletzt Regeln der Aufgabe. Beispielsweise wird eine Aussage als Ereignis erkannt, obwohl dies klar ausgeschlossen wurde.
+/ Logicial Inconsistency: Die Ausgabe widerspricht sich selber. Beispielsweise wird `status: occured` ausgegeben, aber das Datum liegt in der Zukunft.
+
+Antworten eines #acr("LLM")s sind für einen Menschen gut verständlich. Sollen diese Antworten allerdings maschinell weiterverarbeitet werden (z.~B. in #acr("JSON")), ist natürliche Sprache nicht geeignet. Claude bietet daher die Funktion des _Structured Outputs_ an. Dabei wird das Ausgabe Format explizit definiert, um Validationsfehler zu verhindern. Es wird nur garantiert, valides #acr("JSON") zu erhalten, der Inhalt kann weiterhin Halluzinationen enthalten @AnthropicStructuredOutputs. Solche Funktionen können allgemein mit der Technik des _Constrained Decodings_ umgesetzt werden, bei der die Wahrscheinlichkeit des nächsten Tokens auf 0 reduziert wird, falls er nicht ins Schema passt @Willard2023. Wie Anthropic oder OpenAI das genau umsetzt ist natürlich nicht öffentlich bekannt.
 
 == Ereignisextraktion <sec:ereignisextraktion>
 
