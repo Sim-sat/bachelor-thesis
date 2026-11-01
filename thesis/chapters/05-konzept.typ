@@ -6,6 +6,7 @@
 == Ereignisdefinition
 
 Ein Ereignis ist ein konkretes Geschehnis, das im Artikel explizit als stattgefunden oder als fest geplant berichtet wird. Als fest geplant gelten Ereignisse mit konkretem Termin oder offizieller Ankündigung. Sie werden mit dem Attribut _Status_ gesondert gekennzeichnet. Einem Ereignis ist zwingend ein Zeitpunkt oder Zeitraum zugeordnet, wobei die Präzision variieren kann (z. B. Tag, Monat, Jahr). Allerdings muss die Zeitangabe im Artikel selbst stehen, da nicht das Allgemeinwissen des #acr("LLM") geprüft werden soll.
+// TODO: klarstellen, dass sich der Status auf den Zeitpunkt der Veröffentlichung bezieht: planned = zum Erscheinen des Artikels noch nicht eingetreten (z. B. CDU-Sitzung am Sonntag, Artikel vom Mittwoch), auch wenn es inzwischen stattgefunden hat
 
 Spekulative oder hypothetische Geschehnisse („is expected to“, „likely“, „may“) gelten nicht als Ereignis. Ebenfalls ausgeschlossen sind Zustände, Meinungen und Bewertungen sowie statistische Angaben. Aussagen sind selbst keine Ereignisse. Gibt eine Aussage jedoch ein Geschehnis wieder, wird dieses als Ereignis erfasst. Maßgeblich ist allein die Darstellung im Artikel: Der Wahrheitsgehalt der berichteten Ereignisse wird nicht überprüft, da dies den Rahmen der Arbeit überschreiten würde.
 
