@@ -12,27 +12,27 @@ line,description,date,date_precision,status
 260,"Attacks hit Mali's international airport",2026-04-00,month,occured
 260,"Key victory by junta against the JNIM",2023-00-00,year,occured
 260,"Ayman al-Zawahiri killed in Kabul by the US",2022-00-00,year,occured
- 265,"Poland holds elections.",2027-00-00,year,planned
-  265,"Italy holds elections.",2027-00-00,year,planned
-  265,"Spain holds elections.",2027-00-00,year,planned
-  265,"Greece holds elections.",2027-00-00,year,planned
-  265,"France holds elections.",2027-00-00,year,planned
-  265,"Merz holds meeting to coordinate a response to the results of polls",2026-09-20,day,planned
-  265,"Elections in Berlin",2026-09-20,day,planned
-  265,"Elections in Mecklenburg-Wester Pomerania",2026-09-20,day,planned
-  265,"Merz took office",2026-05-00,month,occured
-  265,"General election in germany",2029-00-00,year,planned
-  334,"United Russia wins 355 seats in lower house of parliament",2026-09-00,month,occured
-  334,"United Russia had 343 seats in parliament",2016-00-00,year,occured
-  334,"Russia full-scale invasion of Ukraine",2022-00-00,year,occured
-  334,"Russian supreme court banned Yabloko",2026-08-00,month,occured
-  334,"Ukraine hits Moscow's oil refinery with drone strike",2026-09-20,day,occured
-  334,"Ramzan Kadyrov re-elected with more than 99% of votes",2026-09-00,month,occured
-  334,"Russian attack on Zaporizhzhia with 5 people injured",2026-09-20,day,occured
-  334,"Women killed in drone strike in Kharkiv",2026-09-20,day,occured
-  334,"United Russia won 49,8% in election",2021-00-00,year,occured
-  443,"Ukrainian forces captured two men in Kursk Region",2025-01-00,month,occured
-  443,"Captured men arrvive in south kroea via third country",2026-09-00,month,occured
+265,"Poland holds elections.",2027-00-00,year,planned
+265,"Italy holds elections.",2027-00-00,year,planned
+265,"Spain holds elections.",2027-00-00,year,planned
+265,"Greece holds elections.",2027-00-00,year,planned
+265,"France holds elections.",2027-00-00,year,planned
+265,"Merz holds meeting to coordinate a response to the results of polls",2026-09-20,day,planned
+265,"Elections in Berlin",2026-09-20,day,planned
+265,"Elections in Mecklenburg-Wester Pomerania",2026-09-20,day,planned
+265,"Merz took office",2026-05-00,month,occured
+265,"General election in germany",2029-00-00,year,planned
+334,"United Russia wins 355 seats in lower house of parliament",2026-09-00,month,occured
+334,"United Russia had 343 seats in parliament",2016-00-00,year,occured
+334,"Russia full-scale invasion of Ukraine",2022-00-00,year,occured
+334,"Russian supreme court banned Yabloko",2026-08-00,month,occured
+334,"Ukraine hits Moscow's oil refinery with drone strike",2026-09-20,day,occured
+334,"Ramzan Kadyrov re-elected with more than 99% of votes",2026-09-00,month,occured
+334,"Russian attack on Zaporizhzhia with 5 people injured",2026-09-20,day,occured
+334,"Women killed in drone strike in Kharkiv",2026-09-20,day,occured
+334,"United Russia won 49,8% in election",2021-00-00,year,occured
+443,"Ukrainian forces captured two men in Kursk Region",2025-01-00,month,occured
+443,"Captured men arrvive in south kroea via third country",2026-09-00,month,occured
 443,"Sout Korean foreign ministry summoned Ukraine's chargé d'affaires",2026-09-28,day,occured
 443,"Russia launches full-scale invasion of Ukraine",2026-02-00,month,occured
 443,"South korea pledged a $100m support package for Ukraine"
@@ -61,12 +61,57 @@ line,description,date,date_precision,status
 461,"Chinese citizen Tim joined drone unit",2026-01-00,month,occured
 461,"Chinese volunteer soldier Vanya joined the drone unit",2026-00-00,year,occured
 461,"Chinese soldier killed in Rusiian attack",2026-09-00,month,occured
-
-
-
-
-
-
-
-
-
+310,"Elections in France",2027-00-00,year,planned
+310,"Elections in Itality",2027-00-00,year,planned
+310,"Elections in Spain",2027-00-00,year,planned
+310,"Elections in Poland",2027-00-00,year,planned
+310,"Lars Klingbeil requests European Commission to propose ways to tax oil companies",2026-09-18,day,occured
+310,"Record high diesel prices in Germany with an average of €2.45 a litre",2026-09-16,day,occured
+310,"Record high petrol prices in Germany with an average of €2.31 a litre",2026-09-16,day,occured
+310,"Record high petrol price in Netherlands with an average of €2.78 a litre",2026-09-16,day,occured
+310,"Record high diesel price in Netherlands with an average of €2.73 a litre",2026-09-16,day,occured
+310,"Italy plans to abolish road tax for 14.5m cars and bikes for next year",2027-00-00,year,planned
+310,"French fishers block access to two ports and fuel depot in southern France",2026-09-17,day,occured
+310,"Diesel prices reach €2.37 a litre in french",2026-09-00,month,occured
+310,"French prime minister extends emergency fuel subsidies until end of year for agriculture,fisihing and construction sectors",2026-09-00,month,occured
+310,"Spain doubles diesel tax discount to €0.20 a litre",2026-08-00,month,occured
+310,"Merz announces fuel tax cut which would cut prices by €0.17 until end of year",2026-10-01,day,planned
+310,"The AfD heavily defeats Merz's CDU in the Saxony-Anhalt state election.",2026-09-01,month,occurred
+310,"Two more German state elections are held.",2026-09-19,day,planned
+310,"Russia invads Ukraine",2022-00-00,year,occured
+321,"Russia holds its parliamentary election.",2026-09-18,day,occurred
+321,"Russia invades Ukraine.",2022-02-00,month,occurred
+287,"Sweden holds a general election.",2026-09-13,day,occurred
+287,"Magdalena Andersson invites the Left, Centre and Green parties to initial coalition talks.",2026-09-17,day,occurred
+218,"Stella Schnabel meets multiple members of the Spanish parliament to assert James Chambers' innocence.",2026-09-01,month,occurred
+218,"Spain's council of ministers meets to decide on the US extradition request for James Chambers.",2026-09-22,day,planned
+218,"The Trump administration supplies supporting materials for the extradition request to the Spanish government.",2026-08-26,day,occurred
+218,"James Chambers is detained in Ibiza.",2026-07-10,day,occurred
+218,"Ione Belarra opens Podemos' quarterly meeting with a statement opposing the extradition request.",2026-09-12,day,occurred
+218,"Sumar files a statement in Spain's congress urging the government to deny the extradition request.",2026-09-01,month,occurred
+218,"Hamed Mbarek organizes fans at a Club Africain match.",2026-09-12,day,occurred
+218,"Irene Zugasti helps organize rallies in support of Chambers in Madrid, Barcelona and other Spanish cities.",2026-09-01,month,occurred
+218,"Hamas attacks Israel.",2023-10-07,day,occurred
+218,"James Chambers reaches a settlement with his family, selling stock worth about $250m back to them.",2023-01-01,year,occurred
+404,"Donald Trump and Xi Jinping meet in Beijing.",2026-05-01,month,occurred
+404,"Xi Jinping arrives in the US for a second round of talks with Donald Trump.",2026-09-23,day,occurred
+404,"The US and China agree a temporary truce in Busan.",2025-01-01,year,occurred
+296,"Max becomes Russia's most-used messaging app.",2026-01-01,year,occurred
+283,"Asma Taleb flees her home in the Maqbanah district with her two sons and five grandchildren.",2026-09-01,month,occurred
+283,"War reignites in Yemen with an advance towards the city of Taiz.",2026-09-01,month,occurred
+283,"Hatem Qasem and his family flee their village in Al-Wazeyah district because of shelling and clashes.",2026-09-14,day,occurred
+434,"The stepson of Sir Ranulph Fiennes launches a crowdfunder to pay for specialist legal advice to locate the explorer.",2026-09-26,day,occurred
+434,"Nasa and SpaceX's Crew-13 mission launches to the International Space Station from the Kennedy Space Center.",2026-10-01,day,planned
+434,"Brazil holds its legislative elections.",2026-10-04,day,planned
+434,"Brazil holds its presidential election, with Lula facing Flávio Bolsonaro.",2026-10-04,day,planned
+377,"Russia attacks Kyiv with drones in daylight attacks.",2026-09-23,day,occurred
+377,"Volodymyr Zelenskyy meets world leaders at the UN general assembly.",2026-09-23,day,occurred
+377,"A Russian aerial bomb attack kills five people and injures six in Oleksandrivka, Donetsk region.",2026-09-23,day,occurred
+377,"The G20 meeting is held in Miami, Florida.",2026-12-01,month,planned
+400,"A major academic study of the film's impact is published.",2026-10-01,month,planned
+400,"Prem Rugby's first season as a closed league begins.",2026-09-25,day,planned
+400,"A rogue OpenAI agent hacks part of the Australian healthcare scheme's government database.",2026-06-01,month,occurred
+400,"OpenAI informs the Australian government about the hack.",2026-09-01,month,occurred
+400,"The first community screening of the People's Emergency Briefing film takes place.",2026-04-07,day,occurred
+400,"UK intelligence chiefs publish a report on how the collapse of natural systems threatens security and defence.",2026-09-01,month,occurred
+400,"The author watches the briefing film at an arts centre in Paisley.",2026-08-01,month,occurred
