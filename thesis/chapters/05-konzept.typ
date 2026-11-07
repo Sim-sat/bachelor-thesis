@@ -3,7 +3,7 @@
 = Konzept <konzept>
 
 
-== Ereignisdefinition
+== Ereignisdefinition <sec:definition>
 
 Ein Ereignis ist ein konkretes Geschehnis, das im Artikel explizit als stattgefunden oder als fest geplant berichtet wird. Maßgeblich ist allein die Darstellung im Artikel: Der Wahrheitsgehalt der berichteten Ereignisse wird nicht überprüft, da dies den Rahmen der Arbeit überschreiten würde. Als fest geplant gelten Ereignisse mit konkretem Termin. Bei Ankündigungen wird das angekündigte Geschehen erfasst, sofern es einen Termin hat. Ein Ereignis gilt als geplant (Attribut `status`, @tab:schema), wenn es zum Zeitpunkt der Veröffentlichung des Artikels in der Zukunft liegt, auch wenn es inzwischen eingetreten ist.
 
@@ -57,7 +57,7 @@ Felder für die Akteure eines Ereignisses werden ebenfalls nicht benutzt, da die
 
 == Aufbau der Pipeline <sec:pipeline>
 
-Nach der Vorbereitung (@sec:vorbereitung) wird nun ein Python-Skript aufgerufen, das pro Artikel einen #acr("LLM")-Aufruf durchführt. Die Ausgabe geschieht mit einem definierten JSON-Schema (Structured Output), welches dann in die gewünschte CSV-Datei umgewandelt wird.
+Nach der Vorbereitung (@sec:vorbereitung) wird nun ein Python-Skript aufgerufen, das pro Artikel einen #acr("LLM")-Aufruf durchführt. Ein Aufruf pro Artikel ist notwendig, da sich die relativen Zeitangaben nur mit dem Publikationsdatum dieses Artikels auflösen lassen und so jedes Ereignis direkt seinem Artikel zugeordnet wird. Die Eingabe beinhaltet das Publikationsdatum, Überschrift und den Inhalt des Artikels. Der Standardprompt enthält die Definition aus @sec:definition und keine Beispiele. Varianten werden in @sec:varianten besprochen.  Die Ausgabe geschieht mit einem definierten JSON-Schema (Structured Output), welches dann in die gewünschte CSV-Datei umgewandelt wird @sec:llm. Die Ausgabe wird als eine Zeile pro Ereignis mit Artikel-ID gespeichert..
 
 
 == Gruppierung <sec:gruppierung>
@@ -69,24 +69,22 @@ Nach der Vorbereitung (@sec:vorbereitung) wird nun ein Python-Skript aufgerufen,
 // - Offen: welcher Ansatz bzw. Vergleich, Schwellwert, Umgang mit unterschiedlicher Datumspräzision
 // - Ergebnis je Gruppe: einheitliche Beschreibung (Grundlage für die Gewichtung), Anzahl der Artikel
 
-Text …
 
 == Gewichtung <sec:gewichtung>
 
-// - Gewichtung = weltweite Bedeutung eines Ereignisses, je Gruppe (nicht je Artikel, nicht im Extraktionsschema)
-// - Drei Verfahren im Vergleich:
-//   - Gruppengröße (Anzahl Artikel) als einfache Basis; spiegelt Schwerpunkte des Guardian wider
-//   - Jev (System-One-Modell, Fragetyp Score) mit Rubrik in 5 Stufen: lokal, national, regional, international, global
-//   - Claude mit derselben Rubrik
-// - Eingabe: Beschreibung der Gruppe, nicht der Artikeltext (Bedeutung hängt am Ereignis, nicht am Artikel)
-// - Score = Erwartungswert über die Stufen 0–4 → kontinuierlich, zum Sortieren geeignet
-// - 5 statt 10 Stufen: jede Stufe muss eindeutig beschreibbar sein
-// - Vortest (14 Ereignisse, 19.10.): Jev nahezu deterministisch (±0,03), aber formulierungsabhängig
-//   ("Russia attacks Kyiv, 12 killed" 3,58 vs. "Massive Russian bombardment of Kyiv kills at least 12" 3,38)
-//   → einheitliche Gruppenbeschreibung; Rangkorrelation mit Claude 0,91
-// - Referenz für die Evaluation: Wikipedia-Portal "Current events", September 2026
+Die Gewichtung soll die weltweite Bedeutung eines Ereignisses wiederspiegeln. Dafür werden die gruppierten Ereignisse als Grundlage genutzt (@sec:gruppierung). Dabei wird eine Skala von 5 Stufen verwendet:
+- lokal: wichtig für eine Stadt oder Region
+- national: wichtig für ein Land
+- regional: wichtig für einige Länder
+- international: wichtig für viele Länder
+- global: wichtig für die gesamte Welt, Ereignisse mit historischer Bedeutung
 
-Text …
+Für die Gewichtung werden drei Varianten verwendet und am Ende verglichen:
+/ Gruppengröße: die Anzahl der Artikel als Basis. Je häufiger auch in der Zukunft über ein Thema berichtet wurde, desto wichtiger ist es. Allerdings wird das auch durch die Schwerpunkte des Guardians beeinflusst
+/ Jev: Jev wird mit Fragetyp Score und den 5 Stufen gefragt. Er gibt einen Score und eine Sicherheit zurück
+/ #acr("LLM"): eine #acr("LLM") wird mit der Beschreibung der Anfrage für Jev befragt
+
+Als Evaluation wird das Wikipedia-Portal "Current events" vom September 2026 verwendet.
 
 == Varianten <sec:varianten>
 
@@ -96,4 +94,3 @@ Text …
 // - Alle Extraktionsvarianten werden gegen dieselbe Referenzannotation ausgewertet
 // - Offen: konkrete Modelle und Prompt-Varianten festlegen (nach Prototyp)
 
-Text …
