@@ -4,7 +4,7 @@
 #import "template.typ": *
 
 #show: thesis.with(
-  title: [Automatische Extraktion von Ereignissen aus Nachrichtenartikeln mit großen Sprachmodellen],
+  title: [LLM-basierte Eventextraktion aus Nachrichten-Korpora],
   author: "Simon Sattelberger",
   student-id: "q7362730",
   supervisor: [Prof. Dr.-Ing. habil. Dr. h.c. Herwig Unger],
