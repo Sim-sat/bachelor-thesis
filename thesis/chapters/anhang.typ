@@ -39,4 +39,14 @@ Text …
 
 = Weitere Ergebnisse
 
-Text …
+#figure(
+  table(
+    columns: 5,
+    align: (left, right, right, right, right),
+    table.header([*Ereignis*], [*Jev Mittel*], [*Jev Spanne*], [*Haiku Mittel*], [*Haiku Spanne*]),
+    [Ratte in Alberta], [2,77], [2,64–2,91], [0,67], [0,50–1,00],
+    [Angriff auf Geheimdienst-HQ], [3,00], [2,98–3,03], [2,79], [2,50–3,10],
+    [Schiffe in der Straße von Hormus], [3,31], [3,28–3,33], [3,50], [3,50–3,50],
+  ),
+  caption: [Vortest der Gewichtung mit zehn Aufrufen je Ereignis],
+) <tab:vortest>

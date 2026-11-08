@@ -72,17 +72,23 @@ Nach der Vorbereitung (@sec:vorbereitung) wird nun ein Python-Skript aufgerufen,
 
 == Gewichtung <sec:gewichtung>
 
-Die Gewichtung soll die weltweite Bedeutung eines Ereignisses wiederspiegeln. Dafür werden die gruppierten Ereignisse als Grundlage genutzt (@sec:gruppierung). Dabei wird eine Skala von 5 Stufen verwendet:
-- lokal: wichtig für eine Stadt oder Region
-- national: wichtig für ein Land
-- regional: wichtig für einige Länder
-- international: wichtig für viele Länder
-- global: wichtig für die gesamte Welt, Ereignisse mit historischer Bedeutung
-
+Die Gewichtung soll die weltweite Bedeutung eines Ereignisses widerspiegeln. Dafür werden die gruppierten Ereignisse als Grundlage genutzt (@sec:gruppierung). Eingabe ist die Beschreibung der Gruppe, nicht der Artikeltext, weil die Bedeutung am Ereignis hängt und abhängig von der Berichterstattung ist.
 Für die Gewichtung werden drei Varianten verwendet und am Ende verglichen:
-/ Gruppengröße: die Anzahl der Artikel als Basis. Je häufiger auch in der Zukunft über ein Thema berichtet wurde, desto wichtiger ist es. Allerdings wird das auch durch die Schwerpunkte des Guardians beeinflusst
-/ Jev: Jev wird mit Fragetyp Score und den 5 Stufen gefragt. Er gibt einen Score und eine Sicherheit zurück
-/ #acr("LLM"): eine #acr("LLM") wird mit der Beschreibung der Anfrage für Jev befragt
+/ Gruppengröße: die Anzahl der Artikel dient als einfache als Basis. Je mehr Artikel über ein Ereignis berichten, desto wichtiger ist es. Allerdings wird dies auch durch die Schwerpunkte des Guardians beeinflusst
+/ Jev: Das Modell Jev von TypeSafe erhält die Beschreibung der Gruppe und die Skala als Fragetyp _Score_. Er liefert einen Score sowie eine Angabe der Konfidenz
+/ Claude: Claude bewertet diesselbe Beschreibung mit derselben Skala wie Jev. Damit wird überprüft, ob ein allgemeines #acr("LLM") zu einem ähnlichen Ergebnis kommt wie das spezialisierte Modell.
+
+Es wird eine 5 stufige Skala von Jev und Claude verwendet:
+- lokal (0): wichtig für eine Stadt oder Region
+- national (1): wichtig für ein Land
+- regional (2): wichtig für einige Länder
+- international (3): wichtig für viele Länder
+- global (4): wichtig für die gesamte Welt, Ereignisse mit historischer Bedeutung
+
+Die Skala hat bewusst fünf Stufen, damit jede Stufe eindeutig beschreibbar ist. Eine feinere Abstufung (z.~B. 10 Stufen) wäre nicht mehr eindeutig erklärbar. Der Score lässt das Sortieren der Ergebnisse zu. Ein Vortest mit 3 Ereignissen zeigte, dass Jev auch bei mehrmaligen Anfragen sehr ähnliche Ergebnisse liefert. Je wichtiger das Ergebnis, desto geringer die Abweichung. Bei zwei von den drei Ereignissen lag die Abweichung bei +-0.3. Bei dem anderen ungewöhnlichen Ereignis (Ratte in Alberta gefunden) lag die Abweichung bei +- 0.14, allerdings mit einer Konfidenz von 0.0. Claude Haiku 5.5 schätzt den Wert direkt und streut deutlich stärker (etwa +- 0.3) @tab:vortest.
+
+
+
 
 Als Evaluation wird das Wikipedia-Portal "Current events" vom September 2026 verwendet.
 
