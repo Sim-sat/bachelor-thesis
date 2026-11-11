@@ -39,10 +39,21 @@ Datierte Hintergrund-Ereignisse zählen, auch im Nebensatz oder als Substantiv (
 | Statistik, Trend, Sammelangabe | „soared from 63 in 2016 to 2,845 in 2025“, „killed more soldiers in recent weeks“, „claimed 130 attacks in 2026“, „diesel prices jumped by 15.7% in July“, „175 killed or injured in a single week (3–9 September)“ |
 | Sammel-Geschehen ohne Einzelereignis | „as Trump unveiled successive rounds of tariffs last year“ |
 | Andauernder Prozess | „JNIM has continued to expand“, „sea ice had been falling since 14 September“, „over the past 18 months, Russians have been forced to install …“ |
-| Kommunikation jeder Form: Aussage, Kritik, Post, Interview, Rede, Pressekonferenz | „Peskov said the vote showed …“, „Democrats lambasted Trump“, „writing on social media on Thursday“, „was interviewed on a TV news station“, „will deliver his keynote speech“. Berichtet die Aussage ein Geschehen, wird das Geschehen erfasst. **Ausnahme:** Sprechhandlung mit eigener Wirkung (Einladung, Antrag, offizielle Meldung an eine Behörde, Rücktritt, Veröffentlichung eines Berichts oder einer Studie) → Ereignis |
+| Kommunikation jeder Form: Aussage, Kritik, Post, Interview, Rede, Pressekonferenz | „Peskov said the vote showed …“, „Democrats lambasted Trump“, „writing on social media on Thursday“, „was interviewed on a TV news station“, „will deliver his keynote speech“. Berichtet die Aussage ein Geschehen, wird das Geschehen erfasst. **Ausnahme:** Sprechhandlung mit eigener Wirkung (siehe unten) → Ereignis |
 | Entscheidung oder Absicht ohne berichtete Umsetzung | „a volunteer decided to leave“ |
 | Verneintes Geschehen | „has yet to make any public statement“ |
 | Geplant ohne Termin | „plans to visit Kyiv“ |
+
+### Kommunikation: feste Liste
+
+Die Grenze lässt sich nicht trennscharf begründen, deshalb gilt eine Festlegung:
+
+| Einordnung | Fälle |
+|---|---|
+| Ereignis | Treffen, Gipfel, Telefonat, Verhandlung, Besuch |
+| Kein Ereignis | Interview, Rede, Pressekonferenz, Post, Stellungnahme, Kritik, Werbespot |
+| Ereignis, da eigene Wirkung | Einladung, Antrag, Urteil, Rücktritt, offizielle Meldung an eine Behörde, Veröffentlichung eines Berichts, einer Studie oder eines Buches |
+| Kein Ereignis | Beiträge in Zeitungen und Magazinen („In her piece on Lübeck (…, 6 September)“) |
 
 ## Zeit
 
@@ -76,18 +87,25 @@ Bezogen auf das **Publikationsdatum**: `planned`, wenn das Geschehen zum Erschei
 
 ## Abgrenzung: ein oder mehrere Ereignisse?
 
+**Test:** Zählst du mehrere Geschehen („fünf Wahlen“) oder die Orte eines einzigen Geschehens („ein Taifun, vier Provinzen“)? Nur im ersten Fall wird aufgeteilt.
+
+Die Begriffe folgen Hovy et al. (2013):
+
+- **Subevent:** Teilschritt eines Ablaufs zur selben Zeit, am selben Ort und mit denselben Akteuren → mit dem Ganzen zusammenfassen. Handeln andere Akteure → eigenes Ereignis.
+- **Membership:** mehrere gleichartige Geschehen, die als Menge berichtet werden → einzeln erfassen, wenn der Artikel sie einzeln nennt; nur gezählt → ein Ereignis.
+
 | Regel | Beispiel |
 |---|---|
 | Dasselbe Geschehen wird pro Artikel nur **einmal** annotiert, egal wie oft es erwähnt wird | Duma-Wahl (10× erwähnt) → 1 Ereignis |
 | Verschiedene **Hauptakteure** → getrennt, auch bei kausalem Zusammenhang | Harald V stirbt / Haakon wird König |
-| Teilgeschehen mit **eigenem Ort oder eigener Folge** → getrennt (Regel A) | Angriff auf Kuwait-Basis / Angriff auf VAE-Basis |
+| **Mehrere Geschehen**, einzeln genannt → getrennt | Angriff auf Kuwait-Basis / Angriff auf VAE-Basis; elf Rücktritte mit Name und Jahr → 11 |
 | **Reaktion** anderer Akteure → eigenes Ereignis | Dammbruch / Rettung von 1.260 Menschen; Sturmschaden / Evakuierung |
 | **Unmittelbare Wirkung** gehört zum Geschehen | „embankment collapses, flattening 100 homes“, „attack kills 12“ |
 | **Aufzählung getrennter Geschehen** → aufteilen | Wahlen in Polen, Italien, Spanien, Griechenland, Frankreich → 5 |
 | **Aufzählung betroffener Orte** eines Geschehens → nicht aufteilen | Taifun über vier Provinzen → 1; Kundgebungen in Madrid, Barcelona und anderen Städten → 1 |
 | Verschiedene **Gegenstände** mit eigenem Wert → getrennt | Diesel-Rekord / Benzin-Rekord am selben Tag → 2 |
 | Nur **gezählte, nicht benannte** Geschehen → 1 | „two more state elections this weekend“ → 1 |
-| **Beginn** eines Geschehens ist kein eigenes Ereignis | Xi kommt am Mittwoch an / Gipfel diese Woche → 1 (Datum = Ankunft, `day`); „attacks continued early into Thursday“ → gehört zum Angriff |
+| **Teilschritt** (Subevent) oder **Beginn** eines Geschehens ist kein eigenes Ereignis | Minister besucht die Eröffnung einer Fabrik → nur die Eröffnung; Xi kommt am Mittwoch an / Gipfel diese Woche → 1 (Datum = Ankunft, `day`); „attacks continued early into Thursday“ → gehört zum Angriff |
 | **Details** (Mittel, Ergebnisse anderer Beteiligter, Messwerte) → kein eigenes Ereignis | Waffentyp, Sitze der anderen Parteien, 416,5 mm Regen |
 | Getrennte Abstimmungen am selben Tag → getrennt | Duma-Wahl / Wiederwahl Kadyrovs; Parlaments- / Präsidentschaftswahl Brasilien |
 | Einzelner **Rekord- oder Höchstwert mit Datum** → Ereignis | Meereis-Maximum am 14. September |

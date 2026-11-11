@@ -85,7 +85,7 @@ Es wird eine 5 stufige Skala von Jev und Claude verwendet:
 - international (3): wichtig für viele Länder
 - global (4): wichtig für die gesamte Welt, Ereignisse mit historischer Bedeutung
 
-Die Skala hat bewusst fünf Stufen, damit jede Stufe eindeutig beschreibbar ist. Eine feinere Abstufung (z.~B. 10 Stufen) wäre nicht mehr eindeutig erklärbar. Der Score lässt das Sortieren der Ergebnisse zu. Ein Vortest mit 3 Ereignissen zeigte, dass Jev auch bei mehrmaligen Anfragen sehr ähnliche Ergebnisse liefert. Je wichtiger das Ergebnis, desto geringer die Abweichung. Bei zwei von den drei Ereignissen lag die Abweichung bei +-0.3. Bei dem anderen ungewöhnlichen Ereignis (Ratte in Alberta gefunden) lag die Abweichung bei +- 0.14, allerdings mit einer Konfidenz von 0.0. Claude Haiku 5.5 schätzt den Wert direkt und streut deutlich stärker (etwa +- 0.3) @tab:vortest.
+Die Skala hat bewusst fünf Stufen, damit jede Stufe eindeutig beschreibbar ist. Eine feinere Abstufung (z.~B. 10 Stufen) wäre nicht mehr eindeutig erklärbar. Der Score lässt das Sortieren der Ergebnisse zu. Ein Vortest mit 3 Ereignissen zeigte, dass Jev auch bei mehrmaligen Anfragen sehr ähnliche Ergebnisse liefert. Bei zwei von den drei Ereignissen lag die Abweichung bei +-0.03. Bei dem anderen ungewöhnlichen Ereignis (Ratte in Alberta gefunden) lag die Abweichung bei +- 0.14, allerdings mit einer Konfidenz von 0.0. Claude Haiku 5.5 schätzt den Wert direkt und streut deutlich stärker (etwa +- 0.3) @tab:vortest.
 
 
 
