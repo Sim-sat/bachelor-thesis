@@ -43,3 +43,5 @@ Diese Arbeit folgt dem Prompting-Ansatz ohne weiteres Training. Es gibt keine Tr
 
 == Evaluationsgrundlagen <sec:evaluationsgrundlagen>
 
+Um die Ergebnisse vergleichen zu können führt #cite(<Jurafsky2026>, form: "prose") @Jurafsky2026[Kapitel 4.9] die beiden Metriken _precision_ und _recall_ ein. Precision misst den Anteil der Ergebnisse, die gefunden wurden, die  korrekt (true positive) sind. Precision wird folgendermaßen berechnet: $ "precision" = "true positives" / ("true positives" + "false positives") $ Recall misst den Anteil der gefundenen Ergebnisse von den gesamten korrekten Ergebnissen. Sie wird wie folgt berechnet: $ "recall" = "true positives" / ("true positives" + "false negatives") $ Beide Werte können kombiniert werden, um $"F1" = (2 * P * R) / (P+R)$ zu berechnen. Das harmonische Mittel hat im Vergleich zum normalen Mittel den Vorteil, dass beide Werte hoch sein müssen, um einen hohen Wert zu erreichen.
+
