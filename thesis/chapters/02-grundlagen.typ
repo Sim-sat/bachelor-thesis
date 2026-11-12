@@ -38,10 +38,24 @@ Große Sprachmodelle ermöglichen einen anderen Ansatz: Statt ein Modell für di
 Diese Arbeit folgt dem Prompting-Ansatz ohne weiteres Training. Es gibt keine Trigger und feste Typen, sondern eine freie Beschreibung. Statt eigene Felder für die Akteure werden diese in der Beschreibung genannt. Dafür ist der Zeitpunkt und der Status notwendig. Der Status entspricht dabei ungefähr der ACE-Merkmalen. Die Koreferenz der über Artikel entspricht der Gruppierung und wird in @sec:gruppierung weiter erläutert. Allerdings werden Beziehung zwischen den Ereignissen nicht extrahiert und ausgewertet.
 
 
-== Zeitausdrücke <sec:zeitausdruecke>
-== Semantische Ähnlichkeit <sec:aehnlichkeit>
-
 == Evaluationsgrundlagen <sec:evaluationsgrundlagen>
 
 Um die Ergebnisse vergleichen zu können führt #cite(<Jurafsky2026>, form: "prose") @Jurafsky2026[Kapitel 4.9] die beiden Metriken _precision_ und _recall_ ein. Precision misst den Anteil der Ergebnisse, die gefunden wurden, die  korrekt (true positive) sind. Precision wird folgendermaßen berechnet: $ "precision" = "true positives" / ("true positives" + "false positives") $ Recall misst den Anteil der gefundenen Ergebnisse von den gesamten korrekten Ergebnissen. Sie wird wie folgt berechnet: $ "recall" = "true positives" / ("true positives" + "false negatives") $ Beide Werte können kombiniert werden, um $"F1" = (2 * P * R) / (P+R)$ zu berechnen. Das harmonische Mittel hat im Vergleich zum normalen Mittel den Vorteil, dass beide Werte hoch sein müssen, um einen hohen Wert zu erreichen.
+
+== Zeitausdrücke <sec:zeitausdruecke>
+
+// was ist ein Zeitausdruck?
+Zeitausdrücke können nach #cite(<Stroetgen2013>, form: "prose") in vier Kategorien eingeteilt werden. Uhrzeit und Datum sind bekannte konkrete Zeitangaben, die sich nur in der Granularität unterscheiden. Angaben zur Dauer beschreiben einen Zeitraum(1.1.2026 bis 1.2.2026) während wiederkehrende Zeitangaben (jede Woche) eine Wiederholung beschreiben. Zeitausdrücke bestehen aus Wörtern oder Wortgruppen und können, wie bei Sprache üblich, auf viele verschiedene Weisen ausgedrückt werden (vorgestern vs. vor zwei Tagen). Während eine Zeitangabe im Format ISO 8601 eindeutig erkennbar ist, sind Ausdrücke wie "letzte Woche" deutlich schwerer aufzulösen. Zeitausdrücke können normalisiert werden, d.h. in einen einheitlichen machinenlesbaren Wert umgwandelt werden. Dabei wird häufig das ISO 8601 Format verwendet.
+
+Außerdem können Zeitangaben explizit, implizit oder relativ sein. Eine explizite Zeitangabe ist ohne weiteres Wissen normalisierbar (z.~B. 2026-05-30). Eine implizite Zeitangabe ist mit bestimmtem Wissen normalisierbar (z.~B. Anschläge am 11. September). Relative Zeitangaben lassen sich nur mithilfe von einer Referenzzeit normalisieren, im Beispiel dieser Arbeit wäre die Referenzzeit zum Beispiel das Erscheinungsdatum des Artikels, mithilfe dessen eine Angabe wie "heute" aufgelöst werden kann @Stroetgen2013.
+
+Zeitangaben auflösen geschieht in zwei Teilen. Zuerst muss der Zeitausdruck im Text gefunden werden, mittels regelbasierter Ansätze oder Machine-Learning Ansätzen. Ist die Zeitangabe gefunden muss sie normalisiert werden. Dafür werden laut #cite(<Stroetgen2013>, form: "prose") hauptsächliche regelbasierte Ansätze verwendet. Beispielsweise verwendet Chronos (von Negri und Marseglia) 1000 Regeln, um diese Aufgabe auszuführen. Anschließend wurde HeidelTime @Stroetgen2010 entwickelt, welches je ein Regelset besitzt, welches für Recall oder Precision (vgl. @sec:evaluationsgrundlagen) optimiert wurde. Dabei kamen nur 43 bzw. 45 Regeln zum Einsatz. Regelbasierte Ansätze sind deshalb vom Vorteil, weil es eine relativ begrenzte Anzahl an Zeitausdrücken gibt @Stroetgen2013[S. 280]. Machine-Learning basierte Ansätze werden meist mit regelbasierten Ansätzen kombiniert wie in ATEL @Hacioglu2005.
+
+Diese Arbeit benutzt keinen eigenen Tagger. Die Erkennung geschieht indirekt über das #acr("LLM"), da die Ergebnisse mit Zeitangaben ausgegeben werden. Die Normalisierung wird Anhand des Publikationsdatum durchgeführt und mittels Structured Outputs in eine semantisch korrekte Form gezwungen. Allerdings ist es möglich, dass die Angaben nicht stimmen beispielsweise durch Halluzinationen, die zu Rechenfehlern führen. #cite(<Tan2023>, form: "prose") haben bei `gpt-3.5-0301` zwar eine korrekte Jahresangabe in 99.6% der Fälle beobachtet, bei der Vorhersage des Monats lag der Anteil nur noch bei 30.5%. Eine Auswertung auf Tagesebene -  wie diese Arbeit sie verwendet - würde mutmaßlich noch schlechter abschneiden, auch wenn aktuelle Modelle deutliche Vorteile gegenüber gpt-3 besitzen. Die Korrektheit der Datumsangabe wird in @evaluation ausgewertet. Im Gegensatz zu HeidelTime wird die Zeit außerdem direkt dem Ereignis zugeordnet. Somit entfällt dieser Schritt.
+
+// Verfahren
+
+// Bezug zur Arbeit
+
+== Semantische Ähnlichkeit <sec:aehnlichkeit>
 

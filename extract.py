@@ -1,4 +1,5 @@
 import csv
+import datetime
 import json
 import sys
 from typing import Literal
@@ -50,7 +51,7 @@ Headline: {headline}
 
 class Event(BaseModel):
     description: str
-    date: str
+    date: datetime.date
     date_precision: Literal["day", "month", "year"]
     status: Literal["occurred", "planned"]
 
