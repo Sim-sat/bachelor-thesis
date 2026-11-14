@@ -62,12 +62,9 @@ Nach der Vorbereitung (@sec:vorbereitung) wird nun ein Python-Skript aufgerufen,
 
 == Gruppierung <sec:gruppierung>
 
-// - Ziel: dieselben Ereignisse aus verschiedenen Artikeln zusammenfassen (z. B. Tod Harald V in mehreren Artikeln)
-// - Kandidaten: nur Ereignisse in einem gemeinsamen Zeitfenster vergleichen (Datum ± n Tage)
-// - Ansätze laut Exposé: Embeddings + Ähnlichkeitsschwelle; LLM entscheidet paarweise; Kombination
-//   (Embeddings schlagen Kandidatenpaare vor, LLM verifiziert)
-// - Offen: welcher Ansatz bzw. Vergleich, Schwellwert, Umgang mit unterschiedlicher Datumspräzision
-// - Ergebnis je Gruppe: einheitliche Beschreibung (Grundlage für die Gewichtung), Anzahl der Artikel
+Dasselbe Ereignis wird meistens in mehreren Artikeln berichtet. Aus diesen Ereignissen soll eine Gruppe gebildet werden. Dies wird - wie in @sec:ereignisextraktion beschrieben - dokumentübergreifende Ereigniskoreferenz genannt. Innerhalb eines Artikels wird nicht zusammengefasst, da per Definition jedes Ereignis nur einmal berichtet wird. Daraus folgt, dass die Gruppengröße der Anzahl der Artikel entspricht, in denen das Ereignis vorkommt. Die Gruppengröße wird in der Gewichtung weiter verwendet.
+
+Alle Ereignisse paarweise zu vergleichen ist zwar vom Zeitaufwand kein Problem, aber nicht notwendig, da nur Ereignisse zusammengehören können, deren Zeitangaben übereinstimmen. Entweder sind die Zeitangaben identisch oder die eine Zeitangabe beinhaltet die andere (z.~B. precision _month_ und _day_). Eine Toleranz beim Datum von ±1 Tagen wird erlaubt, um Zeitzonen Unterschiede und "Overnight" Angaben zu berücksichtigen. Es wird ein Satz-Embedding-Modell verwendet und mit der Kosinus-Ähnlichkeit werden anschließend Paare gebildet. Mittels manuell markierter Paare wird ein Schwellwert bestimmt, der dann die Basis für die Übereinstimmung bildet. Ist die Ähnlichkeit größer als der Schwellwert, gilt ein Ereignis als gleich. Alle Paare werden transitiv zu einer Gruppe verbunden. Liegen Paare direkt unter der Schwelle, kann das #acr("LLM") als Entscheider fungieren.
 
 
 == Gewichtung <sec:gewichtung>
