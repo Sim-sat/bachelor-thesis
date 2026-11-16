@@ -4,7 +4,6 @@
 
 == Ereignisextraktion mit #acr("LLM")s
 
-// ChatIE, GoLLIE, @Li2025, @Xu2024
 #cite(<Wei2024>, form: "prose") nutzen ChatGPT ohne weiteres Training für die Extraktion für Ereignissen, Entitäten und Relationen. Die Aufgabe wird dabei in zwei Schritte zerlegt. Im ersten Schritt wird eine Liste von Elementtypen benutzt, aus denen das Modell auswählen soll. Dadurch soll der Suchraum und die Rechenkomplexität reduziert werden. Da das verwendete #acr("LLM") noch keine Structured Outputs unterstützt hat#footnote[#link("https://openai.com/index/introducing-structured-outputs-in-the-api/")], wurde darum gebeten als Liste zu antworten. In Phase zwei werden mehrere Frage-Antwort-Runden benutzt, um für jeden Elementtypen das Element zu extrahieren. Anders als in dieser Arbeit sind die Ereignistypen fest vorgegeben und die Zeitangabe wird nicht gesondert erfasst.
 
 #cite(<Sainz2024>, form: "prose") versuchen das Problem zu lösen, dass #acr("LLM")s schlechtere Ergebnisse bei Zero-Shot Aufgabn liefern als spezialisierte Modelle. Dabei wird das #acr("LLM") darauf nachtrainiert, Richtlinien zu befolgen. Auch wenn auf Daten aus Nachrichten- und Biomedizinkorpora trainiert wurde, wurden in beliebigen Domänen deutliche Verbesserungen festgestellt. Durchschnittlich waren die Ergebnisse 13 F1 Punkte besser als dasselbe Modell ohne Richtlinien. Im Gegenteil zu dieser Arbeit benutzt GoLLIE Nachtraining und benutzt feste Typen mit Triggern und Argumenten. Offen bleibt auch, inwiefern aktuelle Modelle wie Haiku 5.5 abschneiden und ob sie eventuell durch Vortraining beim Anbieter selbst darauf vortrainiert wurde.
@@ -13,16 +12,9 @@
 
 #cite(<Li2025>, form: "prose") beschreibt das Verwenden von starren Typen als einen großen Nachteil von #acr("LLM")-basierten Ansätzen, die die Nützlichkeit in echten Anwendungen mindern. Außerdem stellen sie die Anforderung, dass ein solches System in der Lage sein muss dokumentenübergreifende Koreferenz zu erkennen. Genau an diesen Punkt knüpft @sec:gruppierung an.
 
-== Ereigniserkennung in Nachrichtenströmen
+== Ereigniserkennung in Nachrichtenströmen <sec:event-streams>
 
+#cite(<Allan2000>, form: "prose") war ein Forschungsprogramm mit dem Ziel Ereignisse aus Strömen von Nachrichten zu erkennen und Artikel den Ereignissen zuzuordnen. Außerdem wurden nach der ersten Meldung weitere Artikel diesem Ereignis zugeordnet, was Ähnlichkeit zu @sec:gruppierung aufweist. TDT definiert ein Ereignis als "some unique thing that happens at some point in time" @Allan2000[S.~1]. Wie in dieser Arbeit (@sec:definition) ist ein Ereignis damit ein konkretes, einmaliges Geschehen mit Zeitbezug. Im Gegensatz zu dieser Arbeit wird angenommen, dass ein Artikel höchstens ein Ereignis behandelt, auch wenn die Autoren einräumen, dass dies nicht immer zutrifft @Allan2000[S.~2]. Diese Arbeit geht davon aus, dass Artikel beliebig viele Ereignisse beinhalten können, einschließlich beiläufig erwähnter Hintergrundereignisse.
 
-
+#cite(<Leetaru2013>, form: "prose") extrahiert Ereignisse aus weltweiten Nachrichten seit 1979 und ordnet sie Koordinaten zu. Verwendet wird dabei kein Sprachmodell, sondern ein TABARI-System mit CAMEO Integration. GDELT erlaubt, wie diese Arbeit auch, mehrere Ereignisse pro Artikel und kommt dabei auf einen Mittelwert von von 4-8 Ereignissen, je nach Quelle @Leetaru2013[S.~15]. Vergangene Ereignisse werden mithilfe einer Zeitverschiebung (_time shifting_) von Tabari datiert, deren Funktionsweise jedoch nicht näher beschrieben wird @Leetaru2013[S.~21]. Das Datum wird dabei im Format `JJJJMMTT` angegeben @Leetaru2013[S.~41]. Eine Angabe der Präzision wie das Attribut `date_precision` in dieser Arbeit (@tab:schema) fehlt, wodurch sich ungenaue Zeitangaben nicht von genauen unterscheiden lassen. GDELT speichert die Anzahl der Artikel, die ein Ereignis erwähnen im Feld `NumArticles` und schlägt vor dieses für die Gewichtung zu verwenden @Leetaru2013[S.~47], was diese Arbeit als eine Möglichkeit genauso umsetzt. Die Bewertung in GDELT geschieht über die Goldstein-Skala @Leetaru2013[S.~47] und basiert nur auf dem Typ des Ereignisses, in dieser Arbeit hängt die Gewichtung ausschließlich am konkreten Ereignis mit Beschreibung.
 == Wikipedia Current Events als Datenquelle
-
-// WCEP-Datensatz
-
-== Bedeutung von Nachrichten
-
-
-
-== Abgrenzung dieser Arbeit
