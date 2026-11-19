@@ -1,6 +1,8 @@
 import csv
 import datetime
+import importlib.metadata
 import json
+import pathlib
 import sys
 from typing import Literal
 
@@ -60,19 +62,32 @@ class Events(BaseModel):
     events: list[Event]
 
 
-client = anthropic.Anthropic()  # Reads ANTHROPIC_API_KEY.
-out = csv.writer(sys.stdout)
-out.writerow(["article_id", "description", "date", "date_precision", "status"])
+EFFORT = "medium"
+RUN = pathlib.Path("runs") / f"{datetime.date.today()}_haiku_{EFFORT}"
+RUN.mkdir(parents=True, exist_ok=True)
+(RUN / "meta.json").write_text(json.dumps(
+    {"model": MODEL, "effort": EFFORT, "sdk": importlib.metadata.version("anthropic"), "prompt": PROMPT}, indent=2))
 
+client = anthropic.Anthropic()  # Reads ANTHROPIC_API_KEY.
 lines = open(sys.argv[1], encoding="utf-8").readlines()
-for n in sys.argv[2:]:  # Zeilennummern im Korpus, ab 1
-    a = json.loads(lines[int(n) - 1])
-    r = client.messages.parse(
-        model=MODEL,
-        max_tokens=16000,
-        messages=[{"role": "user", "content": PROMPT.format(**a)}],
-        output_format=Events,
-    )
-    for e in r.parsed_output.events:
-        out.writerow([a["id"], e.description, e.date, e.date_precision, e.status])
-    print(f"Zeile {n}: {r.usage.input_tokens} in, {r.usage.output_tokens} out", file=sys.stderr)
+todo = [l.split()[0] for l in open("ref/annotated.txt") if l.strip()]  # "B" = Überschrift ohne Ereignis
+
+with open(RUN / "raw.jsonl", "w") as raw, open(RUN / "events.csv", "w", newline="") as f:
+    out = csv.writer(f)
+    out.writerow(["line", "article_id", "description", "date", "date_precision", "status"])
+    for n in todo:
+        a = json.loads(lines[int(n) - 1])
+        r = client.messages.parse(
+            model=MODEL,
+            max_tokens=16000,
+            output_config={"effort": EFFORT},
+            messages=[{"role": "user", "content": PROMPT.format(**a)}],
+            output_format=Events,
+        )
+        raw.write(json.dumps({"line": n, "response": r.to_dict()}, default=str) + "\n")
+        if r.parsed_output is None:
+            print(f"Zeile {n}: stop_reason={r.stop_reason}, übersprungen", file=sys.stderr)
+            continue
+        for e in r.parsed_output.events:
+            out.writerow([n, a["id"], e.description, e.date, e.date_precision, e.status])
+        print(f"Zeile {n}: {len(r.parsed_output.events)} Ereignisse", file=sys.stderr)
