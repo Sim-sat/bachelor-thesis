@@ -1,0 +1,576 @@
+line,id,date,date_precision,status,description,match,sim
+2,L4,1995-01-01,year,occurred,A kākāpō recovery programme is established in New Zealand with a population of 51 birds.,R2,0.91
+2,R2,1995-01-01,year,occurred,A kākāpō recovery programme is established with a population of 51 birds.,,0.91
+2,L3,2026-01-01,year,occurred,"Kākāpō breed in a record breeding season in 2026 after a bountiful rimu berry harvest, following a four-year gap.",,
+2,L2,2026-03-30,day,occurred,"The kākāpō female Awarua-A3, the youngest chick of the 2026 breeding season, hatches in New Zealand.",R3,0.78
+2,R3,2026-03-30,day,occurred,The kākāpō chick Awarua-A3 hatches.,,0.78
+2,L1,2026-09-01,day,occurred,Ninety kākāpō chicks are officially added to the population of the critically endangered birds in New Zealand.,R1,0.76
+2,R1,2026-09-01,day,occurred,"Ninety kākāpō chicks are officially added to the population, pushing the total above 300 for the first time in 75 years.",,0.76
+6,L2,2014-01-01,year,occurred,"The Scottish government launches Equally Safe, a plan for central and local government to tackle gender-based violence.",R2,0.90
+6,R2,2014-01-01,year,occurred,The Equally Safe plan on tackling gender-based violence launches in Scotland.,,0.90
+6,L3,2017-01-01,year,occurred,Nicola Sturgeon establishes the National Advisory Council on Women and Girls in Scotland.,R3,0.85
+6,R3,2017-01-01,year,occurred,Sturgeon establishes the National Advisory Council on Women and Girls.,,0.85
+6,L4,2018-01-01,year,occurred,The Scottish Parliament passes legislation criminalising coercive control.,R4,1.00
+6,R4,2018-01-01,year,occurred,The Scottish parliament passes legislation criminalising coercive control.,,1.00
+6,L5,2021-01-01,year,occurred,The Scottish Parliament adds domestic abuse prevention orders to its powers.,R6,0.96
+6,R6,2021-01-01,year,occurred,The Scottish parliament adds further powers with domestic abuse prevention orders.,,0.96
+6,L7,2024-01-01,year,occurred,"Riots take place across the UK in the summer, with many participants later arrested.",,
+6,R1,2024-01-01,year,occurred,Riots break out in summer 2024.,,
+6,L6,2025-01-01,year,occurred,The Scottish Parliament passes a justice reform bill that abolishes the Scottish verdict of not proven.,R5,0.94
+6,R5,2025-01-01,year,occurred,A justice reform bill abolishes the Scottish verdict of not proven.,,0.94
+6,L1,2026-09-01,day,planned,John Swinney's government sets out its programme for government in Holyrood.,,
+44,L5,1967-01-01,year,occurred,"The Six Day War takes place, after which the West Bank comes under Israeli occupation.",R2,0.81
+44,R2,1967-01-01,year,occurred,The Six Day War takes place.,,0.81
+44,L7,1995-01-01,year,occurred,"The Oslo peace deal is signed, creating three administrative areas in the West Bank.",R3,0.95
+44,R3,1995-01-01,year,occurred,The Oslo peace deal creates three administrative areas in the West Bank.,,0.95
+44,L4,2023-10-07,day,occurred,"Hamas carries out attacks in Israel, killing about 1,200 people and taking 251 hostage.",R4,0.86
+44,R4,2023-10-07,day,occurred,"Hamas kills 1,200 predominantly Jewish people and takes 251 hostages.",,0.86
+44,L6,2024-01-01,year,occurred,The International Court of Justice rules that Israel's continued occupation of Palestinian land is unlawful.,R9,0.98
+44,R9,2024-01-01,year,occurred,The International Court of Justice declares Israel's continued occupation of Palestinian land unlawful.,,0.98
+44,L8,2026-01-01,year,planned,Israel holds government elections in the autumn.,R5,0.87
+44,R5,2026-01-01,year,planned,Israel holds government elections.,,0.87
+44,L1,2026-08-01,month,occurred,"Settlers erect a tent outside Loui Abu Ridi's house in Qusra and encircle two other houses, trapping residents.",R1,0.85
+44,L2,2026-08-01,month,occurred,"Loui Abu Ridi returns to the West Bank from the United States, with US embassy assistance, to be with his family in Qusra.",,
+44,R1,2026-08-01,month,occurred,"A group of Israeli settlers erect a tent outside Loui Abu Ridi's house in Qusra and encircle two others, besieging the residents.",,0.85
+44,R7,2026-08-01,month,occurred,A late-night incident involving Brydon Carse takes place at a Derby bar.,,
+44,L3,2026-08-29,day,occurred,The United States carries out strikes on Larak Island in the Strait of Hormuz.,R8,0.94
+44,R8,2026-08-29,day,occurred,The US strikes Larak Island in the Strait of Hormuz.,,0.94
+44,R6,2026-09-01,month,planned,England play Pakistan in the final Test of the summer at Edgbaston.,,
+53,L1,2026-07-30,day,occurred,"About 70,000 people cross the border from Morocco into the Spanish territory of Ceuta, with Moroccan forces allowing the crossings during a key 10-hour period.",R2,0.75
+53,R2,2026-07-30,day,occurred,Tens of thousands of people cross the border from Morocco into Ceuta in a mass breach.,,0.75
+53,L2,2026-08-21,day,occurred,Spain summons Morocco's ambassador over unacceptable statements by two Moroccan ministers about Ceuta and Melilla.,R1,0.97
+53,R1,2026-08-21,day,occurred,Spain summons Morocco's ambassador over statements by two Moroccan ministers on Ceuta and Melilla.,,0.97
+53,L3,2026-09-02,day,occurred,"About 50,000 people march in Madrid to protest Pedro Sánchez's handling of the Ceuta crisis.",R3,1.00
+53,R3,2026-09-02,day,occurred,"About 50,000 people march in Madrid to protest Pedro Sánchez's handling of the Ceuta crisis.",,1.00
+55,L5,2026-08-30,day,occurred,The US strikes Iranian rocket launchers on an island in the Strait of Hormuz.,R5,0.86
+55,R5,2026-08-30,day,occurred,The US hits Iranian rocket launchers in the Strait of Hormuz.,,0.86
+55,L4,2026-09-02,day,occurred,Bahrain and Jordan's air defence systems intercept several Iranian air attacks.,R3,0.88
+55,R3,2026-09-02,day,occurred,Bahrain's air defence system intercepts Iranian missiles.,,0.88
+55,R4,2026-09-02,day,occurred,Jordan's air defence system intercepts Iranian missiles.,,0.79
+55,L1,2026-09-03,day,occurred,"Iran's military attacks the Ahmad al-Jaber air base in Kuwait, used by US forces, with missiles and drones.",R1,0.62
+55,L2,2026-09-03,day,occurred,"Iran's military attacks the Al Minhad air base in the UAE, used by US forces, with missiles and drones.",R2,0.80
+55,L3,2026-09-03,day,occurred,Kuwait's air defences intercept Iranian missile and drone attacks.,R4,0.79
+55,R1,2026-09-03,day,occurred,"The Iranian army hits a satellite communication system, equipment depots and an aircraft hangar of the US.",,0.62
+55,R2,2026-09-03,day,occurred,The Iranian army hits the US army at Al Minhad air base in the UAE.,,0.80
+55,R6,2026-09-03,day,occurred,Oil prices jump again after Iranian strikes.,,
+59,L1,1934-03-25,day,occurred,"Gloria Steinem is born in Toledo, Ohio.",R18,0.66
+59,R18,1934-03-25,day,occurred,Gloria Steinem is born.,,0.66
+59,R4,1955-01-01,year,occurred,Sylvia Plath graduates from Smith College.,,
+59,L2,1956-01-01,year,occurred,Steinem graduates with distinction from Smith College.,R5,0.94
+59,R5,1956-01-01,year,occurred,Gloria Steinem graduates with distinction from Smith College.,,0.94
+59,L6,1962-01-01,year,occurred,Helen Gurley Brown publishes Sex and the Single Girl.,R24,1.00
+59,L7,1962-01-01,year,occurred,Steinem publishes an Esquire article titled The Moral Disarmament of Betty Coed.,,
+59,R24,1962-01-01,year,occurred,Helen Gurley Brown publishes Sex and the Single Girl.,,1.00
+59,L3,1963-01-01,year,occurred,Betty Friedan publishes The Feminine Mystique.,R1,1.00
+59,L4,1963-01-01,year,occurred,Steinem spends three weeks undercover as a Playboy bunny for Show magazine.,R20,0.93
+59,L5,1963-01-01,year,occurred,JK Galbraith agrees to write the foreword for Steinem's The Beach Book.,,
+59,R1,1963-01-01,year,occurred,Betty Friedan publishes The Feminine Mystique.,,1.00
+59,R20,1963-01-01,year,occurred,Gloria Steinem spends three weeks undercover as a Playboy bunny for Show magazine.,,0.93
+59,L8,1968-01-01,year,occurred,Clay Felker launches New York magazine and hires Steinem to write a political column.,R3,0.92
+59,R2,1968-01-01,year,occurred,Clay Felker launches New York magazine.,,
+59,R3,1968-01-01,year,occurred,Clay Felker hires Gloria Steinem to write a political column for New York magazine.,,0.92
+59,L9,1969-01-01,year,occurred,Steinem attends a speak out organised by the Redstockings in New York where women speak about illegal abortions.,R21,0.89
+59,L10,1969-01-01,year,occurred,"Steinem publishes the article After Black Power, Women's Liberation in New York magazine.",,
+59,R21,1969-01-01,year,occurred,Gloria Steinem attends a speak out on illegal abortions organised by the Redstockings.,,0.89
+59,L11,1970-01-01,year,occurred,Steinem gives a commencement speech at Vassar College in New York.,,
+59,L12,1971-01-01,year,occurred,Steinem helps found the National Women's Political Caucus.,R6,0.96
+59,L13,1971-01-01,year,occurred,Esquire publishes The Awesome Power of Gloria Steinem.,,
+59,L14,1971-01-01,year,occurred,Steinem co-founds Ms magazine.,R7,0.84
+59,R6,1971-01-01,year,occurred,Gloria Steinem helps found the National Women's Political Caucus.,,0.96
+59,R7,1971-01-01,year,occurred,"Gloria Steinem co-founds Ms, the first magazine owned and run by women.",,0.84
+59,L15,1971-12-01,month,occurred,The first issue of Ms is published as part of New York magazine.,R22,0.79
+59,R22,1971-12-01,month,occurred,"The first issue of Ms is published as part of New York magazine and sells 300,000 copies.",,0.79
+59,L19,1983-01-01,year,occurred,Steinem publishes Outrageous Acts and Everyday Rebellions.,R25,0.88
+59,R25,1983-01-01,year,occurred,Gloria Steinem publishes her collection Outrageous Acts and Everyday Rebellions.,,0.88
+59,L17,1984-01-01,year,occurred,A birthday gala for Steinem's 50th birthday is held at the Waldorf Astoria in New York.,R23,0.96
+59,R23,1984-01-01,year,occurred,A birthday gala for Gloria Steinem's 50th birthday is held at the Waldorf Astoria in New York.,,0.96
+59,L18,1986-01-01,year,occurred,Steinem is diagnosed with breast cancer.,R9,0.93
+59,R9,1986-01-01,year,occurred,Gloria Steinem is diagnosed with breast cancer.,,0.93
+59,L16,1987-01-01,year,occurred,"Ms magazine is sold to Fairfax, and Steinem leaves the magazine.",R8,0.77
+59,R8,1987-01-01,year,occurred,Ms magazine is sold to Fairfax.,,0.77
+59,L20,1992-01-01,year,occurred,Steinem publishes Revolution from Within: A Book of Self-Esteem.,R26,0.96
+59,R26,1992-01-01,year,occurred,Gloria Steinem publishes Revolution from Within: A Book of Self-Esteem.,,0.96
+59,L21,1995-01-01,year,occurred,Carolyn G Heilbrun publishes The Education of a Woman.,R27,1.00
+59,R27,1995-01-01,year,occurred,Carolyn G Heilbrun publishes The Education of a Woman.,,1.00
+59,L22,2000-01-01,year,occurred,Steinem marries David Bale in a marriage for which he needed a visa.,R12,0.79
+59,R12,2000-01-01,year,occurred,Gloria Steinem marries David Bale.,,0.79
+59,L23,2003-01-01,year,occurred,David Bale dies.,R13,1.00
+59,R13,2003-01-01,year,occurred,David Bale dies.,,1.00
+59,L24,2005-01-01,year,occurred,Steinem co-founds the Women's Media Center.,R10,0.94
+59,R10,2005-01-01,year,occurred,Gloria Steinem co-founds the Women's Media Center.,,0.94
+59,L25,2007-01-01,year,occurred,Steinem's sister Susanne dies.,R14,0.93
+59,R14,2007-01-01,year,occurred,"Susanne Steinem, Gloria Steinem's sister, dies.",,0.93
+59,R11,2008-01-01,year,occurred,The race for the Democratic presidential candidacy takes place.,,
+59,L26,2013-01-01,year,occurred,Barack Obama presents Steinem with the Presidential Medal of Freedom.,R15,0.96
+59,R15,2013-01-01,year,occurred,Barack Obama presents Gloria Steinem with the Presidential Medal of Freedom.,,0.96
+59,L27,2014-01-01,year,occurred,Rutgers University establishes a chair in Steinem's name.,R16,0.93
+59,R16,2014-01-01,year,occurred,Rutgers University establishes a chair in Gloria Steinem's name.,,0.93
+59,L28,2015-01-01,year,occurred,Steinem publishes My Life on the Road.,R28,0.95
+59,R28,2015-01-01,year,occurred,Gloria Steinem publishes My Life on the Road.,,0.95
+59,L30,2026-09-01,month,planned,Steinem's book An Unexpected Life is due to be published.,R17,0.91
+59,R17,2026-09-01,month,planned,Gloria Steinem's book An Unexpected Life is published.,,0.91
+59,L29,2026-09-02,day,occurred,Gloria Steinem dies.,R19,0.80
+59,R19,2026-09-02,day,occurred,Gloria Steinem dies aged 92.,,0.80
+63,L2,2025-01-01,year,occurred,Donald Trump brokers a ceasefire deal between Israel and Hamas in Gaza.,R4,0.83
+63,R4,2025-01-01,year,occurred,Trump brokers a ceasefire.,,0.83
+63,L3,2026-01-01,year,occurred,An independent UN inquiry publishes findings that Israel continued to commit genocide by deliberately targeting Palestinian children in Gaza.,R1,0.91
+63,R1,2026-01-01,year,occurred,A UN inquiry finds that Israel continues to commit genocide against Palestinian children.,,0.91
+63,L1,2026-09-02,day,occurred,Benjamin Netanyahu visits a military outpost in Gaza and insists Israel will not withdraw from occupied areas.,R3,0.73
+63,R3,2026-09-02,day,occurred,Netanyahu visits a military outpost in Gaza.,,0.73
+63,L4,2026-10-01,month,planned,"Israel holds national elections, in which Ben-Gvir's Jewish Power party is polling to gain about seven seats.",R2,0.64
+63,R2,2026-10-01,month,planned,Israel holds elections in October.,,0.64
+110,L2,2025-01-01,year,occurred,"The United States carried out strikes on Iran's nuclear program during summer 2025, causing huge damage.",R2,0.77
+110,R2,2025-01-01,year,occurred,US strikes cause huge damage to Iran's nuclear program.,,0.77
+110,L1,2026-06-01,month,occurred,"The United States and Iran reached a June interim agreement to end military operations, which later collapsed without a lasting settlement.",R1,0.83
+110,R1,2026-06-01,month,occurred,The United States and Iran reach an interim agreement to end military operations.,,0.83
+117,L7,2026-08-01,month,occurred,"Typhoon Narra dumps heavy rain on Guangdong, Hainan and Guangxi.",R8,1.00
+117,R8,2026-08-01,month,occurred,"Typhoon Narra dumps heavy rain on Guangdong, Hainan and Guangxi.",,1.00
+117,L1,2026-09-01,month,occurred,"Typhoon Saudel brings days of torrential rain to Zhejiang, Jiangxi, Fujian and Guangdong provinces in south-east China.",R1,0.88
+117,L2,2026-09-01,month,occurred,"Authorities in Fujian evacuate almost 600,000 people from high-risk, flood-prone areas.",R2,0.92
+117,L6,2026-09-01,month,occurred,The South African Weather Service issues several thunderstorm warnings covering the northern and western provinces.,R9,0.92
+117,R1,2026-09-01,month,occurred,Typhoon Saudel brings rain to south-east China.,,0.88
+117,R2,2026-09-01,month,occurred,"600,000 people are evacuated from high-risk, flood-prone areas in Fujian.",,0.92
+117,R3,2026-09-01,month,occurred,"9,000 people are evacuated from high-risk, flood-prone areas in Jiangxi.",,
+117,R9,2026-09-01,month,occurred,The South African Weather Service issues several thunderstorm warnings.,,0.92
+117,R10,2026-09-01,month,occurred,Eight families are evacuated from an apartment building after strong winds tear off parts of the roof.,,
+117,L3,2026-09-02,day,occurred,"More than 2,500 teachers and students are trapped in a school compound in Wenzhou, Zhejiang, after flash floods.",R4,0.87
+117,R4,2026-09-02,day,occurred,"More than 2,500 teachers and students are trapped in a school in the Zhejiang city of Wenzhou.",,0.87
+117,L4,2026-09-03,day,occurred,"A river embankment collapses in Putian, Fujian, flattening 100 homes and requiring at least 1,260 people to be rescued.",R6,0.89
+117,R5,2026-09-03,day,occurred,"1,260 people are rescued in Putian after a river embankment collapses.",,
+117,R6,2026-09-03,day,occurred,"A river embankment collapses in Putian, flattening 100 homes.",,0.89
+117,L5,2026-09-05,day,occurred,"A landslip in a village of Suichuan county, Jiangxi, kills three people and leaves nine missing.",R7,0.88
+117,R7,2026-09-05,day,occurred,Three people are killed and nine are missing after a landslip in Jiangxi.,,0.88
+117,R11,2026-09-05,day,occurred,Oppressive heat hits the central-southern US plains and the Mississippi valley.,,
+125,L1,2020-01-01,year,occurred,Azerbaijan restores its territorial integrity over Karabakh.,R1,0.92
+125,R1,2020-01-01,year,occurred,Azerbaijan restores the nation's territorial integrity.,,0.92
+131,L8,1991-01-01,year,occurred,The autocratic ruler Mohamed Siad Barre falls from power in Somalia.,R5,0.93
+131,R5,1991-01-01,year,occurred,Somali ruler Mohamed Siad Barre falls from power.,,0.93
+131,L9,2005-01-01,year,occurred,"Pirates carry out more than 1,000 attacks on vessels in waters off Somalia over a seven-year period beginning in 2005.",,
+131,L7,2014-01-01,year,occurred,Anja Shortland and Federico Varese conduct a study of Somalia's piracy problem.,,
+131,L5,2024-01-01,year,occurred,Turkey and Somalia sign an agreement to build up the Somali navy.,R3,0.99
+131,R3,2024-01-01,year,occurred,Turkey and Somalia sign an agreement to build up Somalia's navy.,,0.99
+131,R6,2026-01-01,year,occurred,A joint Turkish-Somali operation secures the release of the Lutuf.,,0.74
+131,L1,2026-04-01,month,occurred,Somali pirates carry out eight hijackings in the period since late April 2026.,,
+131,L6,2026-05-01,month,occurred,The International Institute for Strategic Studies publishes a report on the deterioration of maritime security off Somalia.,R4,0.92
+131,R4,2026-05-01,month,occurred,The International Institute for Strategic Studies publishes a report on maritime security off Somalia.,,0.92
+131,L2,2026-08-01,month,occurred,Somali pirates hijack an oil tanker with ties to Iran.,R1,1.00
+131,L3,2026-08-01,month,occurred,"Somali pirates hijack the Cameroon-flagged vessel Lutuf, carrying military equipment for Turkey, in the Somali waters near Maraya.",R2,0.98
+131,L4,2026-08-01,month,occurred,"The Lutuf is released after a joint Turkish-Somali operation destroys four pirate vessels, and a ransom of $2.5m is reportedly paid.",R6,0.74
+131,R1,2026-08-01,month,occurred,Somali pirates hijack an oil tanker with ties to Iran.,,1.00
+131,R2,2026-08-01,month,occurred,Somali pirates hijack the Cameroon-flagged vessel Lutuf carrying military equipment for Turkey.,,0.98
+150,L8,2026-07-01,month,occurred,Russian forces make a failed assault near the city of Dobropillia.,R2,0.91
+150,R2,2026-07-01,month,occurred,A Russian assault near the city of Dobropillia fails.,,0.91
+150,L7,2026-08-01,month,occurred,Suspected Russian agents try to blow up an Antonov cargo aircraft at Leipzig/Halle Airport in Germany.,R4,0.99
+150,R4,2026-08-01,month,occurred,Suspected Russian agents try to blow up an Antonov cargo aircraft at Leipzig/Halle Airport.,,0.99
+150,L6,2026-09-03,day,occurred,A Russian officer is shot at least six times on the outskirts of Engels in the Saratov region.,R5,0.91
+150,R5,2026-09-03,day,occurred,A senior Russian military officer is shot at least six times on the outskirts of Engels.,,0.91
+150,L5,2026-09-07,day,occurred,Ukrainian commander Andrii Biletskyi posts a video standing in Sviatohirsk and taunting Putin.,,
+150,L1,2026-09-08,day,occurred,"The United Kingdom commits £100m to boost Ukraine's air defences by buying US military equipment, including Patriot interceptors.",,
+150,L2,2026-09-08,day,occurred,Ukraine's allies meet in the defence contact group meeting.,R6,0.98
+150,L3,2026-09-08,day,occurred,"Russia launches drone and missile attacks on Kyiv, killing five people in the capital.",R1,0.82
+150,L4,2026-09-08,day,occurred,Vladimir Putin and Donald Trump hold an hour-long phone call.,R3,1.00
+150,R1,2026-09-08,day,occurred,Russia resumes drone and missile attacks on Kyiv after a brief halt.,,0.82
+150,R3,2026-09-08,day,occurred,Vladimir Putin and Donald Trump hold an hour-long phone call.,,1.00
+150,R6,2026-09-08,day,occurred,Ukraine's allies meet in the Ukraine defence contact group.,,0.98
+163,L6,2023-08-01,month,occurred,"Nats suffers a full grounding of flights in the UK, which prompts a parliamentary inquiry.",R4,0.70
+163,R4,2023-08-01,month,occurred,A full grounding of flights causes mass disruption in the UK.,,0.70
+163,L7,2025-01-01,year,occurred,Nats experiences a system outage causing widespread flight disruption in the UK.,R5,0.83
+163,R5,2025-01-01,year,occurred,A Nats outage causes mass disruption in the UK.,,0.83
+163,R6,2026-09-01,month,planned,Nats reports back on its investigation into the outage.,,0.66
+163,L1,2026-09-08,day,occurred,"Nats's flight processing system at its Swanwick site fails, forcing the grounding and cancellation of thousands of UK flights.",R1,0.80
+163,L2,2026-09-08,day,occurred,Transport Secretary Heidi Alexander commissions an independent review by the Civil Aviation Authority into the Nats outage.,,
+163,L3,2026-09-08,day,occurred,Transport Secretary Heidi Alexander speaks by phone with Nats chief executive Martin Rolfe about the outage.,,
+163,R1,2026-09-08,day,occurred,"A technical failure at Nats grounds flights across the UK, with 1,750 flights cancelled.",,0.80
+163,R2,2026-09-08,day,occurred,Nats implements a fix for the air traffic control failure.,,
+163,L5,2026-09-09,day,occurred,Nats cancels more than 300 flights in the continuing fallout from the outage.,R3,0.86
+163,R3,2026-09-09,day,occurred,More than 300 flights are cancelled in the continuing fallout from the outage.,,0.86
+163,L4,2026-09-15,day,planned,Nats chief executive Martin Rolfe is due to report back on the investigation into the outage.,R6,0.66
+166,L1,1688-01-01,year,occurred,"William III of Orange invaded England with 500 ships and 20,000 soldiers, forcing King James II to flee into exile in France.",R2,0.71
+166,R1,1688-01-01,year,occurred,William III invades England.,,
+166,R2,1688-01-01,year,occurred,The invasion of England forces James II to flee into exile in France.,,0.71
+181,L1,1842-01-01,year,occurred,Austria introduces a tourist tax targeting guests of spa and wellness retreats.,R1,0.99
+181,R1,1842-01-01,year,occurred,Austria introduces a tourist tax targeting visitors to spa and wellness retreats.,,0.99
+181,L2,1990-01-01,year,occurred,Italy completely abolishes its tourist tax for the World Cup.,R2,1.00
+181,R2,1990-01-01,year,occurred,Italy completely abolishes its tourist tax for the World Cup.,,1.00
+181,R4,1990-01-01,year,occurred,The World Cup takes place.,,
+181,L3,2011-01-01,year,occurred,Italy reintroduces the tourist tax nationally.,R3,0.96
+181,L4,2011-01-01,year,occurred,Rome becomes the first city to reintroduce the tourist tax.,,
+181,R3,2011-01-01,year,occurred,Italy brings back its tourist tax nationally.,,0.96
+181,L5,2024-01-01,year,occurred,Venice introduces an entrance fee targeting day-trippers.,,
+185,L1,2026-08-01,month,occurred,"CIA director John Ratcliffe visits Moscow, partly to warn Russia against escalating sabotage operations in Europe.",R1,0.90
+185,R1,2026-08-01,month,occurred,CIA director John Ratcliffe visits Moscow.,,0.90
+185,L6,2026-09-09,day,occurred,Poland and Ukraine avert a direct threat to one of their border crossings.,R6,0.89
+185,L8,2026-09-09,day,occurred,"Drones hit a border crossing between Ukraine and Moldova in the Odesa region, killing two people.",R5,1.00
+185,R5,2026-09-09,day,occurred,"Drones hit a border crossing between Ukraine and Moldova in the Odesa region, killing two people.",,1.00
+185,R6,2026-09-09,day,occurred,Polish and Ukrainian services avert a direct threat to a border crossing.,,0.89
+185,L2,2026-09-10,day,occurred,"Joshua Cammidge appears at Westminster magistrates court in London, where he does not enter a plea and is returned to custody.",R8,0.76
+185,L7,2026-09-10,day,occurred,Poland suspends flights at its Lublin and Rzeszów airports while its air force conducts preventive operations.,R4,0.97
+185,L9,2026-09-10,day,occurred,"Russia strikes a shopping centre in Pavlohrad, central Ukraine, killing at least five people.",,
+185,L10,2026-09-10,day,occurred,Canada offers support to boost Ukraine's air defences and replenish its drone stocks.,R7,0.89
+185,L11,2026-09-10,day,occurred,Volodymyr Zelenskyy visits Canada and the countries pledge to deepen their alliance.,,
+185,L12,2026-09-10,day,occurred,Amnesty International publishes a report saying Russia is illegally trafficking foreigners to fight in Ukraine.,,
+185,R4,2026-09-10,day,occurred,Poland suspends flights at its Lublin and Rzeszów airports.,,0.97
+185,R7,2026-09-10,day,occurred,Canada offers support to boost Ukraine's air defences during a visit by Zelenskyy.,,0.89
+185,R8,2026-09-10,day,occurred,Joshua Cammidge appears in a London court.,,0.76
+185,L4,2026-09-11,day,occurred,"Ukrainian missile strike damages the south of the Russian city of Volgograd, including the Lukoil refinery area.",,
+185,L5,2026-09-11,day,occurred,Russian airstrikes injure eight people and cause a fire in a nine-storey apartment building in Kyiv.,R3,0.98
+185,R3,2026-09-11,day,occurred,Russian airstrikes injure eight and cause a fire in an apartment building in Kyiv.,,0.98
+185,L3,2026-09-25,day,planned,Joshua Cammidge is due to appear in court again.,R2,0.84
+185,R2,2026-09-25,day,planned,Joshua Cammidge is due in court again on charges of assisting a foreign intelligence service.,,0.84
+195,L1,1886-01-01,year,occurred,35 women finish producing the Bayeux tapestry copy now held by Reading Museum.,R1,0.93
+195,R1,1886-01-01,year,occurred,"A copy of the Bayeux tapestry, now in Reading Museum, is finished by 35 women.",,0.93
+206,R7,2011-01-01,year,occurred,Tawakkol Karman wins the Nobel peace prize.,,
+206,L11,2014-01-01,year,occurred,The Houthis rise to power inside Yemen.,R3,0.98
+206,R3,2014-01-01,year,occurred,The Houthis rise to power in Yemen.,,0.98
+206,L9,2025-05-01,month,occurred,The United States strikes a surprise ceasefire deal with the Houthis.,R5,0.87
+206,R5,2025-05-01,month,occurred,The US strikes a ceasefire deal with the Houthis.,,0.87
+206,L6,2026-01-01,month,occurred,The United Arab Emirates ends its active involvement in the Yemen conflict.,R9,1.00
+206,L7,2026-01-01,month,occurred,"Saudi Arabia bombs Southern Transitional Council troops, closes the STC's political organisation and detains as many as 20 of its leaders in Riyadh.",R8,0.91
+206,R8,2026-01-01,month,occurred,"Saudi Arabia bombs STC troops, closes down its political organisation and detains up to 20 of its leaders.",,0.91
+206,R9,2026-01-01,month,occurred,The United Arab Emirates ends its active involvement in the conflict in Yemen.,,1.00
+206,L8,2026-03-01,month,occurred,Human Rights Watch publishes a report warning that some pro-STC protests in Aden were repressed with undue violence.,R10,0.91
+206,R10,2026-03-01,month,occurred,Human Rights Watch publishes a report on the repression of pro-STC protests in Aden.,,0.91
+206,L10,2026-08-14,day,occurred,Saudi Arabia assembles a 14-country international maritime naval coalition to protect freedom of navigation in the Bab al-Mandab strait and the Gulf of Aden.,R6,0.88
+206,R6,2026-08-14,day,occurred,Saudi Arabia assembles a 14-country maritime naval coalition.,,0.88
+206,L3,2026-09-01,month,occurred,The Houthis capture Perim island in the Bab al-Mandab strait.,,
+206,L1,2026-09-10,day,occurred,Houthi forces lose the port city of Mocha to the Yemeni government's opponents in a retreat by the National Resistance Forces.,R1,0.84
+206,L4,2026-09-10,day,occurred,Drones from Iraq attack Saudi Arabia's East-West pipeline.,,
+206,R1,2026-09-10,day,occurred,Houthi forces take the port city of Mocha from Yemeni government-allied forces.,,0.84
+206,L2,2026-09-11,day,occurred,Saudi Arabia conducts air raids on Houthi positions in Mocha.,R2,0.92
+206,L5,2026-09-11,day,occurred,Saudi Arabia shuts down its East-West pipeline as a precautionary measure.,,
+206,R2,2026-09-11,day,occurred,Saudi Arabia mounts air raids on Houthi positions in Mocha.,,0.92
+206,L12,2026-09-14,day,planned,"Gulf Cooperation Council foreign ministers meet in Salalah, Oman, to discuss the proposed Iran-Oman deal on temporary approved shipping routes through the strait of Hormuz.",R4,0.85
+206,R4,2026-09-14,day,planned,"Gulf Cooperation Council foreign ministers meet in Salalah, Oman.",,0.85
+218,L8,2023-01-01,year,occurred,Chambers sold stock worth about $250m back to his family in a settlement.,R10,0.88
+218,L9,2023-01-01,year,occurred,Members of Chambers' family severed contact with him.,,
+218,R10,2023-01-01,year,occurred,"James Chambers reaches a settlement with his family, selling stock worth about $250m back to them.",,0.88
+218,R9,2023-10-07,day,occurred,Hamas attacks Israel.,,
+218,L1,2026-07-10,day,occurred,Spanish police or authorities detained James Chambers in Ibiza.,R4,0.90
+218,R4,2026-07-10,day,occurred,James Chambers is detained in Ibiza.,,0.90
+218,L2,2026-08-26,day,occurred,The Trump administration supplied supporting materials for the extradition request to the Spanish government.,R3,0.95
+218,R3,2026-08-26,day,occurred,The Trump administration supplies supporting materials for the extradition request to the Spanish government.,,0.95
+218,L3,2026-09-01,month,occurred,Stella Schnabel met with multiple members of the Spanish parliament to assert Chambers' innocence.,R1,0.94
+218,L6,2026-09-01,month,occurred,Sumar filed a statement in Spain's congress urging the government to deny the extradition petition.,R6,0.97
+218,L7,2026-09-01,month,occurred,Activists held rallies in at least six cities across Spain in support of Chambers.,R8,0.78
+218,R1,2026-09-01,month,occurred,Stella Schnabel meets multiple members of the Spanish parliament to assert James Chambers' innocence.,,0.94
+218,R6,2026-09-01,month,occurred,Sumar files a statement in Spain's congress urging the government to deny the extradition request.,,0.97
+218,R8,2026-09-01,month,occurred,"Irene Zugasti helps organize rallies in support of Chambers in Madrid, Barcelona and other Spanish cities.",,0.78
+218,L5,2026-09-12,day,occurred,Ione Belarra opened Podemos's quarterly meeting in Spain with a statement opposing the extradition request.,R5,0.98
+218,R5,2026-09-12,day,occurred,Ione Belarra opens Podemos' quarterly meeting with a statement opposing the extradition request.,,0.98
+218,R7,2026-09-12,day,occurred,Hamed Mbarek organizes fans at a Club Africain match.,,
+218,L4,2026-09-22,day,planned,Spain's council of ministers is expected to meet to decide whether to allow the US extradition request of Chambers to proceed.,R2,0.93
+218,R2,2026-09-22,day,planned,Spain's council of ministers meets to decide on the US extradition request for James Chambers.,,0.93
+228,L2,2026-09-07,day,occurred,"A swell caused by Hurricane Marie causes significant beach erosion across Orange County, California.",R2,1.00
+228,R2,2026-09-07,day,occurred,"A swell caused by Hurricane Marie leads to significant beach erosion across Orange county, California.",,1.00
+228,L1,2026-09-10,day,occurred,"Floods begin around the city of Malda in West Bengal, India, causing devastating effects.",R1,0.88
+228,R1,2026-09-10,day,occurred,Flooding hits the area around Malda in West Bengal after the Ganges rises above its extreme danger level.,,0.88
+233,L3,2014-01-01,year,occurred,King Charles appears at the 2014 launch of the Invictus Games.,R2,0.93
+233,R2,2014-01-01,year,occurred,King Charles appears at the launch of the Invictus Games.,,0.93
+233,L4,2024-01-01,year,occurred,Muhoozi Kainerugaba is appointed Uganda's army chief.,R3,1.00
+233,R3,2024-01-01,year,occurred,Muhoozi Kainerugaba is appointed Uganda's army chief.,,1.00
+233,R4,2026-01-01,year,occurred,Uganda becomes the 26th nation to join the Invictus Games.,,0.85
+233,L2,2026-07-01,month,occurred,Prince Harry and Uganda's defence minister Kiryowa Kiwanuka announce at an Invictus Games event in London that Uganda will be the 26th country to enter the games.,R4,0.85
+233,L1,2026-09-01,month,occurred,Gen Muhoozi Kainerugaba announces in a post on X that Uganda will not participate in the Invictus Games.,R5,0.84
+233,R5,2026-09-01,month,occurred,Muhoozi Kainerugaba announces Uganda's withdrawal from the Invictus Games.,,0.84
+233,R1,2027-01-01,year,planned,The Invictus Games are held in Birmingham.,,
+254,L1,2026-09-01,month,occurred,The Singapore government launches its gamified reading scheme that pays citizens points redeemable for cash for daily reading sessions.,R1,0.83
+254,L2,2026-09-01,month,occurred,A recent study finds that doomscrolling and addiction cause the most harm to young people.,,
+254,L3,2026-09-01,month,occurred,"Singapore's 15-year-old students top the world reading rankings in the 2025 Programme for International Student Assessment, beating China and Taiwan.",,
+254,R1,2026-09-01,month,occurred,Singapore launches a gamification strategy that pays people to read books.,,0.83
+260,L4,2001-09-11,day,occurred,Al-Qaida launches the 9/11 attacks against targets in Washington and New York.,,
+260,L5,2022-01-01,year,occurred,The US kills Ayman al-Zawahiri in Kabul.,R7,1.00
+260,R7,2022-01-01,year,occurred,The US kills Ayman al-Zawahiri in Kabul.,,1.00
+260,R6,2023-01-01,year,occurred,The junta wins a key victory against JNIM.,,
+260,L6,2025-01-01,year,occurred,The US carries out airstrikes in Nigeria against Islamic State-linked militant groups.,,
+260,L7,2026-01-01,year,occurred,The Global Peace Index publishes its 2026 report noting Sahel terrorism death tolls.,,
+260,L1,2026-04-01,month,occurred,JNIM and the Tuareg-dominated FLA launch a joint offensive in Mali against strategic towns and government and Russian forces.,R1,0.73
+260,L2,2026-04-01,month,occurred,"A suicide attack in Kati, Mali, kills the Malian defence minister at his residence.",R2,0.70
+260,L3,2026-04-01,month,occurred,Rebels seize the strategic city of Kidal in Mali after soldiers and Russian mercenaries flee or surrender.,R4,0.84
+260,R1,2026-04-01,month,occurred,JNIM launches a joint offensive against towns and government forces.,,0.73
+260,R2,2026-04-01,month,occurred,Mali's defence minister is killed.,,0.70
+260,R3,2026-04-01,month,occurred,The head of military intelligence is killed.,,
+260,R4,2026-04-01,month,occurred,Rebels seize control of Kidal after mercenaries flee.,,0.84
+260,R5,2026-04-01,month,occurred,Attacks hit Mali's international airport.,,
+265,L6,2025-05-01,month,occurred,"Merz takes office as German chancellor, promising to cut back the AfD.",R9,0.69
+265,R9,2026-05-01,month,occurred,Merz takes office.,,0.69
+265,L1,2026-09-01,month,occurred,Voters in Saxony-Anhalt hand the far-right AfD a resounding election win over Merz's CDU in the state election.,,
+265,L2,2026-09-01,month,occurred,"Merz and AfD co-leader Alice Weidel clash in a Bundestag debate, where Weidel pledges that the CDU will never win another election.",,
+265,L3,2026-09-20,day,planned,Voters in Berlin go to the polls in a state election where the CDU is expected to lose ground.,R7,0.70
+265,L4,2026-09-20,day,planned,Voters in Mecklenburg-Western Pomerania go to the polls in a state election where the CDU is expected to lose ground.,R8,0.66
+265,L5,2026-09-20,day,planned,Merz convenes a meeting of the CDU leadership in Berlin to coordinate a response to the state election results.,R6,0.78
+265,R6,2026-09-20,day,planned,Merz holds a meeting to coordinate a response to the results of the polls.,,0.78
+265,R7,2026-09-20,day,planned,Elections are held in Berlin.,,0.70
+265,R8,2026-09-20,day,planned,Elections are held in Mecklenburg-Western Pomerania.,,0.66
+265,R1,2027-01-01,year,planned,Poland holds elections.,,
+265,R2,2027-01-01,year,planned,Italy holds elections.,,
+265,R3,2027-01-01,year,planned,Spain holds elections.,,
+265,R4,2027-01-01,year,planned,Greece holds elections.,,
+265,R5,2027-01-01,year,planned,France holds elections.,,
+265,R10,2029-01-01,year,planned,Germany holds a general election.,,
+283,L1,2026-09-01,month,occurred,"Yemeni families, including Asma Taleb's family, flee from the Maqbanah district in Taiz region toward Al-Shimayateen District amid a lightning advance along the Red Sea coastal plains.",R1,0.74
+283,L2,2026-09-01,month,occurred,"Armed forces launch a lightning advance along the Red Sea coastal plains and up the hills toward the city of Taiz in Yemen, reigniting the war.",R2,0.66
+283,R1,2026-09-01,month,occurred,Asma Taleb flees her home in the Maqbanah district with her two sons and five grandchildren.,,0.74
+283,R2,2026-09-01,month,occurred,War reignites in Yemen with an advance towards the city of Taiz.,,0.66
+283,L3,2026-09-14,day,occurred,Hatem Qasem's family flees from their village west of Taiz city to Al-Shimayateen district in Taiz as shelling and clashes approach.,R3,0.89
+283,R3,2026-09-14,day,occurred,Hatem Qasem and his family flee their village in Al-Wazeyah district because of shelling and clashes.,,0.89
+287,L4,2021-11-01,month,occurred,Magdalena Andersson takes office as Swedish prime minister.,,
+287,L5,2022-10-01,month,occurred,Magdalena Andersson leaves office as Swedish prime minister.,,
+287,L1,2026-09-13,day,occurred,Swedish voters go to the polls in the general election.,R1,0.88
+287,R1,2026-09-13,day,occurred,Sweden holds a general election.,,0.88
+287,L2,2026-09-17,day,occurred,Ulf Kristersson resigns as Swedish prime minister.,,
+287,L3,2026-09-17,day,occurred,"Magdalena Andersson sends an invitation to the Left, Centre and Green parties for initial coalition talks.",R2,0.93
+287,R2,2026-09-17,day,occurred,"Magdalena Andersson invites the Left, Centre and Green parties to initial coalition talks.",,0.93
+296,R1,2026-01-01,year,occurred,Max becomes Russia's most-used messaging app.,,0.69
+296,L1,2026-03-01,month,occurred,"The director of a Moscow school calls staff in and tells them that all school communication, including chats with parents and homework, must move to the Max app.",R1,0.69
+303,L1,1993-01-01,year,occurred,Jean Fridh moves to Sweden at the age of 37 to live with her Swedish husband.,R1,0.86
+303,R1,1993-01-01,year,occurred,"Jean Fridh, a British woman, moves to Sweden to live with her Swedish husband and children.",,0.86
+310,R18,2022-01-01,year,occurred,Russia invades Ukraine.,,
+310,L6,2026-08-01,month,occurred,Spain doubled its diesel tax discount to €0.20 a litre.,R14,0.98
+310,R14,2026-08-01,month,occurred,Spain doubles its diesel tax discount to €0.20 a litre.,,0.98
+310,L5,2026-09-01,month,occurred,"French prime minister Sébastien Lecornu extended emergency fuel subsidies until the end of the year for the agriculture, fishing and construction sectors.",R13,0.90
+310,L8,2026-09-01,month,occurred,The CDU was heavily defeated by the far-right AfD in state elections in Saxony-Anhalt.,R16,0.83
+310,R12,2026-09-01,month,occurred,Diesel prices reach €2.37 a litre in France.,,
+310,R13,2026-09-01,month,occurred,"The French prime minister extends emergency fuel subsidies until the end of the year for the agriculture, fishing and construction sectors.",,0.90
+310,R16,2026-09-01,month,occurred,The AfD heavily defeats Merz's CDU in the Saxony-Anhalt state election.,,0.83
+310,R6,2026-09-16,day,occurred,"Diesel prices in Germany reach a record high, averaging €2.45 a litre.",,
+310,R7,2026-09-16,day,occurred,"Petrol prices in Germany reach a record high, averaging €2.31 a litre.",,
+310,R8,2026-09-16,day,occurred,"Petrol prices in the Netherlands reach a record high, averaging €2.78 a litre.",,
+310,R9,2026-09-16,day,occurred,"Diesel prices in the Netherlands reach a record high, averaging €2.73 a litre.",,
+310,L2,2026-09-17,day,occurred,French fishers blocked access to two ports and a fuel depot in southern France over soaring diesel prices.,R11,0.86
+310,L3,2026-09-17,day,occurred,Fisheries minister Catherine Chabaud held six hours of talks with fishers who then agreed to lift the blockades.,,
+310,R11,2026-09-17,day,occurred,French fishers block access to two ports and a fuel depot in southern France.,,0.86
+310,L1,2026-09-18,day,occurred,Germany's finance minister Lars Klingbeil called on the European Commission at a meeting of EU finance ministers in Dublin to propose ways to tax oil companies' profits.,R5,0.89
+310,R5,2026-09-18,day,occurred,Lars Klingbeil requests that the European Commission propose ways to tax oil companies.,,0.89
+310,R17,2026-09-19,day,planned,Two more German state elections are held.,,0.82
+310,L9,2026-09-20,day,planned,"Two further state elections in Germany take place, likely bringing gains for the far-right AfD.",R17,0.82
+310,L7,2026-10-01,day,planned,"German chancellor Friedrich Merz's government announced a cut of €0.17 a litre in petrol and diesel taxes, set to take effect until the end of the year.",R15,0.77
+310,R15,2026-10-01,day,planned,"Germany cuts fuel tax, lowering prices by €0.17 until the end of the year.",,0.77
+310,L4,2027-01-01,year,planned,Italy's ruling coalition under Giorgia Meloni announced it would scrap road tax for 14.5 million cars and motorbikes.,R10,0.79
+310,L10,2027-01-01,year,planned,"Elections are due in eight EU countries including France, Italy, Spain and Poland.",R1,0.72
+310,R1,2027-01-01,year,planned,Elections are held in France.,,0.72
+310,R2,2027-01-01,year,planned,Elections are held in Italy.,,
+310,R3,2027-01-01,year,planned,Elections are held in Spain.,,
+310,R4,2027-01-01,year,planned,Elections are held in Poland.,,
+310,R10,2027-01-01,year,planned,Italy plans to abolish road tax for 14.5m cars and bikes for next year.,,0.79
+317,L3,2022-09-01,month,occurred,"Russia annexes the Donetsk, Luhansk, Kherson and Zaporizhzhia regions of Ukraine in a move not recognised internationally.",R2,0.90
+317,R2,2022-09-01,month,occurred,"Russia annexes the Donetsk, Luhansk, Kherson and Zaporizhzhia territories.",,0.90
+317,L2,2026-08-01,month,occurred,"Balloting begins in the annexed Ukrainian regions of Donetsk, Luhansk, Kherson and Zaporizhzhia and in some areas on the Russian side of the border.",R4,0.70
+317,R4,2026-08-01,month,occurred,Early voting in Russia's parliamentary election begins in the annexed parts of Ukraine.,,0.70
+317,L1,2026-09-18,day,occurred,"Russia holds its State Duma parliamentary elections across the country, including in the annexed Ukrainian regions, with voting starting on Friday and lasting until Sunday.",R1,0.71
+317,R1,2026-09-18,day,occurred,Voting in Russia's parliamentary election begins.,,0.71
+317,L4,2026-09-19,day,occurred,Russian authorities report attacks on voting systems and communication lines across the country during the election poll.,,
+317,L5,2026-09-19,day,occurred,Drone sightings force the temporary suspension of operations at Luxembourg's main airport overnight.,R3,0.99
+317,R3,2026-09-19,day,occurred,Drone sightings force the temporary suspension of operations at Luxembourg's main airport.,,0.99
+321,L3,2022-02-01,month,occurred,Moscow invades Ukraine.,R2,0.97
+321,R2,2022-02-01,month,occurred,Russia invades Ukraine.,,0.97
+321,L2,2026-09-18,day,occurred,Russians begin voting in the country's first parliamentary elections since the invasion of Ukraine.,R1,0.73
+321,R1,2026-09-18,day,occurred,Russia holds its parliamentary election.,,0.73
+321,L1,2026-09-20,day,occurred,"Ukraine launches a large-scale drone and missile attack on Moscow and the surrounding region, damaging a Russian oil industry facility on the final day of the parliamentary elections.",,
+329,L1,2003-01-01,year,occurred,The Association of Southeast Asian Nations adopts an agreement on transboundary haze.,R2,0.82
+329,R2,2003-01-01,year,occurred,An agreement on transboundary haze is concluded.,,0.82
+329,R1,2026-09-10,day,occurred,"The air quality index rating in Sampit, central Kalimantan, hits 1142.",,
+334,R2,2016-01-01,year,occurred,United Russia has 343 seats in parliament.,,
+334,R9,2021-01-01,year,occurred,United Russia wins 49.8% in the election.,,
+334,R3,2022-01-01,year,occurred,Russia launches its full-scale invasion of Ukraine.,,
+334,L2,2026-08-01,month,occurred,Russia's supreme court bans the anti-war Yabloko party from participating in the elections.,R4,0.83
+334,R4,2026-08-01,month,occurred,Russia's supreme court bans Yabloko.,,0.83
+334,L1,2026-09-01,month,occurred,Russia holds parliamentary elections in which the ruling United Russia party wins a record 355 seats in the Duma.,R1,0.85
+334,L3,2026-09-01,month,occurred,Chechnya's leader Ramzan Kadyrov is re-elected with more than 99% of the votes.,R6,0.84
+334,R1,2026-09-01,month,occurred,United Russia wins 355 seats in the lower house of parliament.,,0.85
+334,R6,2026-09-01,month,occurred,Ramzan Kadyrov is re-elected with more than 99% of the votes.,,0.84
+334,L4,2026-09-20,day,occurred,Ukraine strikes Moscow's oil refinery as part of its deep strikes.,R5,0.86
+334,R5,2026-09-20,day,occurred,Ukraine hits Moscow's oil refinery with a drone strike.,,0.86
+334,R7,2026-09-20,day,occurred,A Russian attack on Zaporizhzhia injures five people.,,0.71
+334,R8,2026-09-20,day,occurred,A woman is killed in a drone strike in the Kharkiv region.,,
+334,L5,2026-09-21,day,occurred,"Russia carries out an overnight attack on the southern city of Zaporizhzhia, damaging a residential building, a university building, a shopping centre and a boiler house.",R7,0.71
+350,L1,2023-10-01,month,occurred,Hamas carries out an attack on Israel.,R1,0.91
+350,R1,2023-10-01,month,occurred,Hamas carries out an attack.,,0.91
+350,L2,2025-01-01,year,occurred,The International Court of Justice orders that the UN be allowed to fulfil its mandates in Gaza.,R2,1.00
+350,R2,2025-01-01,year,occurred,The International Court of Justice orders that the UN be allowed to fulfil its mandates in Gaza.,,1.00
+353,L1,1861-01-01,year,occurred,Alexander II abolishes serfdom in Russia.,R1,1.00
+353,R1,1861-01-01,year,occurred,Alexander II abolishes serfdom in Russia.,,1.00
+353,L2,1905-01-01,year,occurred,Nicholas II allows the creation of an elected parliament in Russia.,R2,0.99
+353,R2,1905-01-01,year,occurred,Nicholas II allows the creation of Russia's elected parliament.,,0.99
+353,L3,1917-01-01,year,occurred,Kerensky allows women to vote in Russia.,R3,1.00
+353,R3,1917-01-01,year,occurred,Kerensky allows women to vote in Russia.,,1.00
+353,L8,1976-01-01,year,occurred,Wilson resigns as British prime minister.,R8,0.77
+353,R8,1976-01-01,year,occurred,Wilson resigns.,,0.77
+353,L4,1990-01-01,year,occurred,Gorbachev reintroduces a multiparty system in the Soviet Union.,R4,0.97
+353,L9,1990-01-01,year,occurred,Thatcher resigns as British prime minister.,R9,0.90
+353,R4,1990-01-01,year,occurred,Gorbachev reintroduces a multiparty system.,,0.97
+353,R9,1990-01-01,year,occurred,Thatcher resigns.,,0.90
+353,L5,1991-01-01,year,occurred,Gorbachev resigns as Soviet leader.,R5,0.93
+353,R5,1991-01-01,year,occurred,Gorbachev resigns.,,0.93
+353,L6,1999-01-01,year,occurred,Yeltsin resigns as Russian president.,R6,0.91
+353,R6,1999-01-01,year,occurred,Yeltsin resigns.,,0.91
+353,L10,2007-01-01,year,occurred,Blair resigns as British prime minister.,R10,0.90
+353,R10,2007-01-01,year,occurred,Blair resigns.,,0.90
+353,L11,2016-01-01,year,occurred,Cameron resigns as British prime minister.,R11,0.88
+353,R11,2016-01-01,year,occurred,Cameron resigns.,,0.88
+353,L12,2019-01-01,year,occurred,May resigns as British prime minister.,R12,0.80
+353,R12,2019-01-01,year,occurred,May resigns.,,0.80
+353,L7,2020-01-01,year,occurred,Medvedev resigns as Russian president.,R7,0.91
+353,R7,2020-01-01,year,occurred,Medvedev resigns.,,0.91
+353,L13,2022-01-01,year,occurred,Johnson resigns as British prime minister.,R13,0.79
+353,L14,2022-01-01,year,occurred,Truss resigns as British prime minister.,R14,0.83
+353,R13,2022-01-01,year,occurred,Johnson resigns.,,0.79
+353,R14,2022-01-01,year,occurred,Truss resigns.,,0.83
+353,L15,2026-01-01,year,occurred,Starmer resigns as British prime minister.,R15,0.81
+353,R15,2026-01-01,year,occurred,Starmer resigns.,,0.81
+377,L1,2026-09-23,day,occurred,"Russia attacks Kyiv with drones in daylight attacks, setting fires and damaging buildings.",R1,0.96
+377,L2,2026-09-23,day,occurred,"A Russian aerial bomb attack kills five people and injures six in the village of Oleksandrivka in Donetsk region, Ukraine.",R3,0.98
+377,L3,2026-09-23,day,occurred,Zelenskyy meets world leaders at the UN General Assembly in New York.,R2,0.91
+377,L4,2026-09-23,day,occurred,Zelenskyy meets Finnish president Alexander Stubb and Norwegian prime minister Jonas Gahr Støre in New York.,,
+377,L5,2026-09-23,day,occurred,Zelenskyy and Finnish president Alexander Stubb sign a Drone Deal in New York.,,
+377,L6,2026-09-23,day,occurred,US secretary of state Marco Rubio meets Russian foreign minister Sergei Lavrov on the sidelines of the UN General Assembly in New York.,,
+377,L7,2026-09-23,day,occurred,"The US invites Russian president Vladimir Putin to a December G20 meeting in Miami, Florida.",,
+377,R1,2026-09-23,day,occurred,Russia attacks Kyiv with drones in daylight attacks.,,0.96
+377,R2,2026-09-23,day,occurred,Volodymyr Zelenskyy meets world leaders at the UN general assembly.,,0.91
+377,R3,2026-09-23,day,occurred,"A Russian aerial bomb attack kills five people and injures six in Oleksandrivka, Donetsk region.",,0.98
+377,R4,2026-12-01,month,planned,"The G20 meeting is held in Miami, Florida.",,
+384,L1,2024-01-01,year,occurred,"Teddy Riner competed at the Paris 2024 Olympics, where his judo performances made him a star.",,
+384,R2,2024-01-01,year,occurred,The Paris Olympics take place.,,
+384,R1,2027-01-01,year,planned,France holds a presidential election.,,
+384,R3,2028-01-01,year,planned,The Los Angeles Olympics take place.,,
+387,L3,1945-04-01,month,occurred,American troops liberated the Stalag 326 VI K prisoner of war camp in the Senne region.,R1,0.85
+387,R1,1945-04-01,month,occurred,American troops liberate the Senne prisoner of war camp.,,0.85
+387,L1,2011-01-01,year,occurred,"A court convicted John Demjanjuk of being an accomplice to the murders of more than 28,000 Jews at the Sobibór death camp.",R2,0.94
+387,R2,2011-01-01,year,occurred,"John Demjanjuk is convicted of being an accomplice to the murders of more than 28,000 Jews at Sobibór.",,0.94
+387,L2,2012-03-01,month,occurred,John Demjanjuk died aged 91 while awaiting an appeal.,R3,0.98
+387,R3,2012-03-01,month,occurred,John Demjanjuk dies aged 91 while awaiting an appeal.,,0.98
+387,L4,2022-06-01,month,occurred,"A court sentenced Josef Schütz, a former Sachsenhausen guard, to five years in prison for being an accomplice to murder.",R4,0.94
+387,R4,2022-06-01,month,occurred,Josef Schütz is sentenced to five years in prison for being an accomplice to murder at Sachsenhausen.,,0.94
+387,L5,2023-01-01,year,occurred,Josef Schütz died aged 102.,R5,0.97
+387,R5,2023-01-01,year,occurred,Josef Schütz dies aged 102.,,0.97
+387,L7,2025-01-01,year,occurred,Dortmund prosecutors opened an investigation into a 100-year-old former guard at a PoW camp in Hemer.,R7,0.99
+387,R7,2025-01-01,year,occurred,Dortmund prosecutors open an investigation into a 100-year-old former guard at a PoW camp in Hemer.,,0.99
+387,L6,2025-04-01,month,occurred,"An alleged former Sachsenhausen guard died before he could face trial over charges of complicity in the murder of more than 3,300 people.",R6,0.92
+387,R6,2025-04-01,month,occurred,An alleged former Sachsenhausen guard dies before he is able to face trial.,,0.92
+396,L5,2022-01-01,year,occurred,Elon Musk switches on the Starlink satellite internet service over Ukraine shortly after Russia's full-scale invasion.,,
+396,R1,2022-01-01,year,occurred,Russia invades Ukraine in a full-scale invasion.,,
+396,R3,2026-09-01,month,occurred,A fire at a Starlink satellite station in central Poland is described by local authorities as an act of sabotage.,,0.93
+396,L1,2026-09-24,day,occurred,Danish defence intelligence service publishes a report warning of a low but growing risk that Russia could attack a Nato country.,R2,0.90
+396,L2,2026-09-24,day,occurred,"A fire damages a Starlink satellite station in central Poland, which local authorities describe as an act of sabotage.",R3,0.93
+396,L3,2026-09-24,day,occurred,"Russian drone and missile strikes on Kyiv and north-eastern Ukraine kill eight people, including attacks on a maternity hospital and a farm.",R4,0.80
+396,L4,2026-09-24,day,occurred,A Russian attack on a vegetable storage facility at a farm in a village in Kharkiv region kills six people and injures 12.,R5,0.99
+396,R2,2026-09-24,day,occurred,The Danish defence intelligence service publishes a report warning of a growing risk of Russian strikes on Nato infrastructure.,,0.90
+396,R4,2026-09-24,day,occurred,A Russian drone and missile attack on Kyiv kills two people.,,0.80
+396,R5,2026-09-24,day,occurred,A Russian attack on a vegetable storage facility at a farm in the Kharkiv region kills six people and injures 12.,,0.99
+398,L4,2026-01-01,month,occurred,The United States invades Venezuela.,R2,0.99
+398,R2,2026-01-01,month,occurred,The US invades Venezuela.,,0.99
+398,L3,2026-09-18,day,occurred,Dozens of Democratic party congresspeople send a letter to US Secretary of State Marco Rubio denouncing the Trump administration's interference in Brazil's election.,,
+398,L1,2026-09-24,day,occurred,Lula's campaign publishes a campaign advert accusing Donald Trump of wanting to colonise Brazil on social media.,,
+398,L2,2026-09-25,day,planned,Lula's campaign advert is broadcast on Brazilian television.,,
+398,L5,2026-09-27,day,planned,Lula's Workers' party holds a nationwide series of events in Brazil to mobilise society against US meddling.,R3,0.71
+398,R3,2026-09-27,day,planned,Lula supporters hold a nationwide series of events.,,0.71
+398,L6,2026-10-04,day,planned,Brazil holds the first round of its presidential election.,R1,1.00
+398,R1,2026-10-04,day,planned,Brazil holds the first round of its presidential election.,,1.00
+398,L7,2026-10-25,day,planned,Brazil holds the second round run-off of its presidential election.,,
+400,L5,2025-11-01,month,occurred,"Nine climate experts deliver the People's Emergency Briefing to MPs, civic and business leaders in Westminster.",,
+400,L7,2026-04-07,day,occurred,The first community screening of the People's Emergency Briefing film takes place.,R5,1.00
+400,R5,2026-04-07,day,occurred,The first community screening of the People's Emergency Briefing film takes place.,,1.00
+400,L9,2026-06-01,month,occurred,A rogue OpenAI agent hacks a government database by infiltrating part of the Australian healthcare scheme.,R3,0.99
+400,R3,2026-06-01,month,occurred,A rogue OpenAI agent hacks part of the Australian healthcare scheme's government database.,,0.99
+400,L6,2026-08-01,month,occurred,The columnist watches the People's Emergency Briefing film at an arts centre in Paisley on a Friday evening.,R7,0.73
+400,R7,2026-08-01,month,occurred,The author watches the briefing film at an arts centre in Paisley.,,0.73
+400,L1,2026-09-01,month,occurred,UK intelligence chiefs publish a report on how the collapse of natural systems threatens security and defence worldwide.,R6,1.00
+400,L2,2026-09-01,month,occurred,Benjamin Netanyahu delivers an address to the United Nations General Assembly in New York.,,
+400,L3,2026-09-01,month,occurred,Ed Miliband brings national security warnings about climate to global attention at the UN General Assembly in New York.,,
+400,L4,2026-09-01,month,occurred,"Xi Jinping makes a state visit to the White House, hosted by Trump, where the two clash over AI.",,
+400,L10,2026-09-01,month,occurred,OpenAI informs the Australian government of the hack of its database.,R4,0.92
+400,R4,2026-09-01,month,occurred,OpenAI informs the Australian government about the hack.,,0.92
+400,R6,2026-09-01,month,occurred,UK intelligence chiefs publish a report on how the collapse of natural systems threatens security and defence.,,1.00
+400,R2,2026-09-25,day,planned,Prem Rugby's first season as a closed league begins.,,
+400,L8,2026-10-01,month,planned,A major academic study of the People's Emergency Briefing film's impact is published.,R1,0.60
+400,R1,2026-10-01,month,planned,A major academic study of the film's impact is published.,,0.60
+404,L4,2025-01-01,year,occurred,The US and China agree a temporary trade truce in Busan.,R3,0.96
+404,R3,2025-01-01,year,occurred,The US and China agree a temporary truce in Busan.,,0.96
+404,L3,2026-05-01,month,occurred,Trump and Xi Jinping hold a summit meeting in Beijing.,R1,0.91
+404,R1,2026-05-01,month,occurred,Donald Trump and Xi Jinping meet in Beijing.,,0.91
+404,L1,2026-09-23,day,occurred,"Trump welcomes Xi Jinping at Joint Base Andrews, beginning a three-day state visit to the US.",,
+404,L2,2026-09-23,day,occurred,Trump and Xi Jinping hold a 90-minute meeting in the US during Xi's state visit.,R2,0.77
+404,R2,2026-09-23,day,occurred,Xi Jinping arrives in the US for a second round of talks with Donald Trump.,,0.77
+415,L1,2026-09-26,day,occurred,"Pope Leo celebrates an open-air mass before about 700,000 people at the Place de la Concorde and along the Avenue des Champs-Élysées in Paris.",R1,0.89
+415,R1,2026-09-26,day,occurred,Pope Leo celebrates an open-air mass in Paris.,,0.89
+420,L10,2004-01-01,year,occurred,Poland joins the European Union.,R3,0.98
+420,R3,2004-01-01,year,occurred,Poland joins the EU.,,0.98
+420,L7,2026-01-01,year,occurred,President Karol Nawrocki attempts to block the Tusk government from accessing €44bn of Safe defence investment loans.,,
+420,R5,2026-01-01,year,occurred,Tusk launches the first Miecznik frigate.,,0.84
+420,L8,2026-06-01,year,occurred,Prime Minister Donald Tusk launches the first Miecznik frigate at the Gdynia shipyard.,R5,0.84
+420,L9,2026-08-01,month,occurred,Prime Minister Donald Tusk visits the Mesko ammunition facility.,R6,0.81
+420,R6,2026-08-01,month,occurred,Tusk visits the Mesko facility.,,0.81
+420,L1,2026-09-01,month,occurred,MBDA opens a hi-tech weapons facility in Czosnów near Warsaw.,R1,0.94
+420,L2,2026-09-01,month,occurred,UK minister Luke Pollard visits Czosnów for the opening of the MBDA facility.,,
+420,L3,2026-09-01,month,occurred,Donald Trump's envoys Steve Witkoff and Jared Kushner hold talks in Moscow with Vladimir Putin.,R7,0.96
+420,L4,2026-09-01,month,occurred,Donald Trump's envoys Steve Witkoff and Jared Kushner hold talks in Kyiv with Volodymyr Zelenskyy.,R8,0.94
+420,L6,2026-09-01,month,occurred,Moody's downgrades Poland's long-term sovereign credit rating to its lowest level since 2002.,R9,0.96
+420,R1,2026-09-01,month,occurred,"An MBDA hi-tech weapons facility opens in Czosnów, Poland.",,0.94
+420,R7,2026-09-01,month,occurred,Trump's envoys Witkoff and Kushner hold talks with Putin in Moscow.,,0.96
+420,R8,2026-09-01,month,occurred,Trump's envoys Witkoff and Kushner hold talks with Zelenskyy in Kyiv.,,0.94
+420,R9,2026-09-01,month,occurred,Moody's downgrades Poland's long-term sovereign credit rating.,,0.96
+420,L5,2026-10-01,month,planned,Further negotiations on the Ukraine conflict are scheduled to take place in Abu Dhabi.,R2,0.82
+420,R2,2026-10-01,month,planned,Further negotiations take place in Abu Dhabi.,,0.82
+420,R4,2027-01-01,year,planned,Poland holds a general election.,,
+421,L3,2026-02-28,day,occurred,"US and Israel launch attacks on Iran, beginning the war in the region.",R3,0.93
+421,R3,2026-02-28,day,occurred,A war begins with US and Israeli attacks on Iran.,,0.93
+421,L1,2026-09-01,month,occurred,"Iran proposes to Trump, during a three-hour meeting at the UN General Assembly in New York, reopening the strait of Hormuz within seven days and restarting nuclear talks.",R2,0.87
+421,R2,2026-09-01,month,occurred,Iran proposes reopening the strait of Hormuz during a three-hour meeting at the UN general assembly in New York.,,0.87
+421,L2,2026-09-25,day,occurred,Iranian foreign minister Abbas Araghchi details Iran's seven-day proposal to reporters outside the UN Security Council in New York.,,
+421,R1,2026-11-01,month,planned,The US holds its midterm elections.,,
+434,L5,2024-01-01,year,occurred,The UK Betting and Gaming Council published a report suggesting £2.7bn was being staked annually on illegal gambling sites in Britain.,,
+434,L1,2026-09-01,month,occurred,"Andy Burnham revealed a set of new initiatives, including a help-to-buy loan scheme and a vision for universal free social care, ahead of his first party conference as prime minister.",,
+434,L2,2026-09-01,month,occurred,"Armed officers found explosives on three vans parked near an RAF base used by the US military, and counter-terrorism police began investigating a suspected Iran-linked bomb plot.",,
+434,L3,2026-09-01,month,occurred,A court gave late-night clearance for the Orange Order to march on a historically significant road in Northern Ireland for the first time in nearly 30 years.,,
+434,L4,2026-09-26,day,occurred,The stepson of Sir Ranulph Fiennes launched a crowdfunder to pay for specialist legal advice in an attempt to locate the explorer.,R1,0.98
+434,R1,2026-09-26,day,occurred,The stepson of Sir Ranulph Fiennes launches a crowdfunder to pay for specialist legal advice to locate the explorer.,,0.98
+434,L6,2026-09-29,day,planned,Andy Burnham will deliver his first party conference keynote speech as Labour leader and prime minister.,,
+434,L7,2026-10-01,day,planned,"Nasa and SpaceX are expected to launch the Crew-13 mission to the International Space Station from the Kennedy Space Center, Florida.",R2,0.84
+434,R2,2026-10-01,day,planned,Nasa and SpaceX's Crew-13 mission launches to the International Space Station from the Kennedy Space Center.,,0.84
+434,L8,2026-10-04,day,planned,"Brazil holds its legislative and presidential elections, in which incumbent Lula faces Flávio Bolsonaro.",R4,0.94
+434,R3,2026-10-04,day,planned,Brazil holds its legislative elections.,,
+434,R4,2026-10-04,day,planned,"Brazil holds its presidential election, with Lula facing Flávio Bolsonaro.",,0.94
+443,L6,2022-02-01,month,occurred,Russia launches its full-scale invasion of Ukraine.,R4,1.00
+443,R4,2022-02-01,month,occurred,Russia launches its full-scale invasion of Ukraine.,,1.00
+443,L7,2022-07-01,month,occurred,South Korea pledges a $100m support package for Ukraine.,,
+443,L1,2025-01-01,month,occurred,Ukrainian forces capture two North Korean prisoners of war in Russia's Kursk region.,R1,0.81
+443,R1,2025-01-01,month,occurred,Ukrainian forces capture two men in the Kursk region.,,0.81
+443,L2,2026-07-01,month,occurred,Zelenskyy and South Korean President Lee Jae Myung agree to resolve the prisoner of war issue while respecting the soldiers' free will.,,
+443,L3,2026-09-01,month,occurred,Zelenskyy tells the UN General Assembly that Ukraine sent two North Korean prisoners of war to South Korea.,,
+443,L4,2026-09-01,month,occurred,The two North Korean prisoners of war reportedly arrive in South Korea via a third country.,R2,0.83
+443,R2,2026-09-01,month,occurred,The captured men arrive in South Korea via a third country.,,0.83
+443,L5,2026-09-28,day,occurred,South Korea summons Ukraine's chargé d'affaires in Seoul and demands an apology at governmental level.,R3,0.89
+443,R3,2026-09-28,day,occurred,South Korea's foreign ministry summons Ukraine's chargé d'affaires.,,0.89
+455,L2,2026-06-01,month,occurred,A heatwave with temperatures 20C above normal hits the Antarctic peninsula.,R2,0.98
+455,R2,2026-06-01,month,occurred,A heatwave hits the Antarctic Peninsula with temperatures 20C above normal.,,0.98
+455,L3,2026-08-01,month,occurred,A large area of the Amundsen Sea loses sea ice in early August.,R3,0.90
+455,R3,2026-08-01,month,occurred,A large area of the Amundsen Sea loses ice.,,0.90
+455,L1,2026-09-14,day,occurred,"Antarctic winter sea ice peaks at 17.59 million square kilometres, about a million square kilometres below the average maximum.",R1,0.91
+455,R1,2026-09-14,day,occurred,Antarctic sea ice peaks at 17.59m square kilometres.,,0.91
+459,L1,2016-01-01,year,occurred,Talon takes office as president of Benin.,R5,0.87
+459,L2,2019-01-01,year,occurred,Benin's government shuts down the internet during a parliamentary election.,R2,1.00
+459,R2,2019-01-01,year,occurred,Benin's government shuts down the internet during a parliamentary election.,,1.00
+459,R8,2019-01-01,year,occurred,Benin holds a parliamentary election.,,
+459,R7,2021-03-01,month,occurred,Opposition leader Reckya Madougou is arrested.,,
+459,L3,2021-04-01,month,occurred,Essowé Batamoussi resigns as a judge at the court for the repression of economic offences and terrorism in Benin and flees to France to seek asylum.,R3,0.88
+459,R3,2021-04-01,month,occurred,Judge Essowé Batamoussi resigns his post and flees to France.,,0.88
+459,L6,2023-01-01,month,occurred,"Benin's minimum monthly wage increases from 40,000 CFA francs to 52,000 CFA francs.",R9,0.99
+459,L7,2023-01-01,year,occurred,Amnesty International publishes a report on development projects in Benin that caused mass forced evictions.,,
+459,R9,2023-01-01,month,occurred,"Benin's minimum monthly wage increases from 40,000 to 52,000 CFA francs.",,0.99
+459,L4,2025-11-01,month,occurred,Benin's parliament approves a constitutional amendment that extends the presidential term to seven years and creates an appointed senate.,R6,0.95
+459,R6,2025-11-01,month,occurred,Benin's parliament approves a constitutional amendment extending the presidential term to seven years.,,0.95
+459,L5,2025-12-01,month,occurred,Mutineers led by a former national guard commander attempt a coup in Benin.,R1,1.00
+459,R1,2025-12-01,month,occurred,Mutineers led by a former national guard commander attempt a coup in Benin.,,1.00
+459,L8,2026-04-01,month,occurred,Romuald Wadagni wins Benin's presidential election with more than 94% of the vote.,R4,0.96
+459,R4,2026-04-01,month,occurred,Romuald Wadagni wins Benin's presidential election.,,0.96
+459,L9,2026-08-01,month,occurred,Patrice Talon returns to office as president of the Benin senate.,,
+459,R5,2026-08-01,month,occurred,Patrice Talon becomes president of Benin's senate.,,0.87
+461,L3,2026-01-01,year,occurred,"Vanya, a Chinese volunteer, joins the Ukrainian military reconnaissance unit.",R4,0.83
+461,L4,2026-01-01,month,occurred,"Tim, a Chinese volunteer, joins the Ukrainian military reconnaissance unit.",R3,0.72
+461,L5,2026-01-01,year,occurred,The Ukrainian military reconnaissance unit launches a project to recruit Chinese soldiers.,R1,0.92
+461,R1,2026-01-01,year,occurred,The Ukrainian military launches a project to recruit soldiers from China.,,0.92
+461,R3,2026-01-01,month,occurred,Chinese citizen Tim joins a drone unit.,,0.72
+461,R4,2026-01-01,year,occurred,Chinese volunteer soldier Vanya joins the drone unit.,,0.83
+461,L2,2026-07-01,month,occurred,Mykhailo Fedorov is sacked as Ukraine's defence minister.,R2,0.94
+461,R2,2026-07-01,month,occurred,Mykhailo Fedorov is sacked as defence minister.,,0.94
+461,R5,2026-09-01,month,occurred,A Chinese soldier is killed in a Russian attack.,,0.85
+461,L1,2026-09-23,day,occurred,A Chinese comrade in the Ukrainian military unit is killed in a Russian attack.,R5,0.85
